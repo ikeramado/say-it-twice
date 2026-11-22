@@ -1,0 +1,41 @@
+# The models the gate can call. Swapping a model or a provider is a change to this file only.
+# Each entry: provider (anthropic | openai_compatible), model (the API model id), key_env (the
+# environment variable that holds its key; the key itself never lives here), base_url (only
+# for openai_compatible), max_output (required: the output tokens of each call, thinking
+# included), params (optional extra request fields, passed as they are).
+# Its prices live under the same entry name in config/prices.yaml.
+
+# The entry the three agents use (docs/plan.md, "Model").
+agents: claude-haiku-5-5
+# The entry of the exploratory run: the naive agent with a larger model (prereg section 7).
+exploratory: claude-sonnet-5-5
+
+models:
+  claude-haiku-5-5:
+    provider: anthropic
+    model: claude-haiku-5-5
+    key_env: ANTHROPIC_API_KEY
+    max_output: 1024
+    # Thinking off: adaptive thinking is on by default and spent all of 300 output tokens
+    # before any text (T27). Haiku 5.5 accepts `disabled` at effort low to high; the default
+    # effort is medium and no request sets another.
+    params:
+      thinking:
+        type: disabled
+  # Exploratory: the naive agent with a larger model.
+  claude-sonnet-5-5:
+    provider: anthropic
+    model: claude-sonnet-5-5
+    key_env: ANTHROPIC_API_KEY
+    max_output: 1024
+    # Sonnet 5.5 rejects `disabled` with a 400; `between_tools` is its thinking-off setting.
+    params:
+      thinking:
+        type: between_tools
+  # Any server speaking the OpenAI chat-completions API takes this shape, for example:
+  # local:
+  #   provider: openai_compatible
+  #   model: <the server's model id>
+  #   base_url: http://localhost:8000/v1
+  #   key_env: LLM_API_KEY
+  #   max_output: 1024

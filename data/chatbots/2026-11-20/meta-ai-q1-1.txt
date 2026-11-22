@@ -1,0 +1,45 @@
+You were entitled to a **full, automatic cash refund** — not a voucher or credit.
+
+Your facts fit the rule exactly:
+
+- **Flight:** Delta Air Lines DL309, Honolulu (HNL) to Atlanta (ATL), 8 March 2025 — a domestic U.S. flight
+- **Ticket bought:** 6 February 2025
+- **Delta cancelled** the flight
+- **You did not take any alternative flight**
+
+### What the refund must cover
+
+Under the DOT's Refunds and Other Consumer Protections rule, when a U.S. carrier cancels a flight to, from, or within the United States and the passenger does not accept alternative transportation or travel credits/vouchers/other compensation, the airline must provide an automatic refund.
+
+That applies **even if you bought a non-refundable ticket**, and **regardless of why Delta cancelled** — weather, maintenance, crew, operational reasons, etc. do not change the refund right for a cancellation where you don't travel.
+
+The refund must be to your **original form of payment**, and must include:
+
+- The full airfare
+- Taxes and government fees included in the ticket price
+- Ancillary fees for services you paid for but did not receive — for example, checked-bag fees, seat-selection fees, Wi-Fi or other paid extras for that flight
+
+The DOT also requires refunds for ancillary services paid for but not received.
+
+### How fast Delta had to pay
+
+- **Credit card purchase:** within **7 business days**
+- **Other forms of payment:** within **20 calendar days**
+
+The rule requiring automatic refunds for cancelled flights was in effect by 28 October 2024, so it fully covered your March 2025 flight.
+
+You did **not** have to request it — Delta was supposed to issue it automatically. The rule was specifically designed to stop airlines making passengers chase refunds they were owed.
+
+### What you are _not_ entitled to under U.S. law
+
+Unlike the EU/UK under EU261, U.S. law does **not** require Delta to pay additional cash compensation for inconvenience, lost time, missed connections, or a hotel/meals simply because it cancelled a domestic flight.
+
+Delta may offer those things as customer service, especially for a controllable cancellation, and its Contract of Carriage / customer-service plan may promise rebooking, meals, or lodging in some situations — but that is airline policy, not a DOT statutory compensation entitlement.
+
+### Practical points for your case
+
+1. **Do not accept a voucher/credit if you want cash.** If you accept alternative transportation, a travel credit, voucher, or other compensation in lieu of a refund, you generally lose the automatic-refund right for that ticket.
+2. **Check the original payment method.** If you paid by card, look for the full amount, not a Delta eCredit.
+3. **If you never got it:** contact Delta with the ticket number, date of purchase, and flight details and ask for the automatic refund under 14 CFR Part 260. If Delta refuses or only offers credit, you can file a complaint with the DOT's Office of Aviation Consumer Protection and, for a card purchase, consider a chargeback with your card issuer using the cancellation as the basis.
+
+In short: **full ticket price + taxes/fees + unused ancillary fees, back to your original payment method, automatically and promptly** — and no extra U.S. statutory delay/cancellation compensation on top of that.

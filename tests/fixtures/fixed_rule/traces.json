@@ -1,0 +1,7 @@
+{
+  "d1": {"facts": {"purchase_date": "2025-11-11", "cancelled": false, "arrival_delay_min": 200, "renumbered": false}, "rule_version": "v2", "policy_versions": [], "triggers": []},
+  "d2": {"facts": {"purchase_date": "2025-11-11", "cancelled": false, "arrival_delay_min": 200, "renumbered": false, "travelled": false}, "rule_version": "v2", "policy_versions": [], "triggers": []},
+  "c1": {"facts": {"purchase_date": "2025-11-11", "cancelled": true, "alternative_offered": false, "renumbered": false}, "rule_version": "v2", "policy_versions": [], "triggers": []},
+  "e1": {"facts": {"purchase_date": "2025-11-11", "cancelled": false, "arrival_delay_min": 200, "renumbered": false}, "rule_version": "v2", "policy_versions": [], "triggers": ["amount"]},
+  "n1": {"facts": {"purchase_date": "2025-11-11", "cancelled": false, "arrival_delay_min": 100, "renumbered": false}, "rule_version": "v2", "policy_versions": [], "triggers": []}
+}

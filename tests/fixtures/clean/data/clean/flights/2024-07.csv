@@ -1,0 +1,3 @@
+carrier,flight_number,date,origin,destination,scheduled_departure,actual_departure,scheduled_arrival,actual_arrival,cancelled,diverted,cancellation_code
+DL,100,2024-07-01,ATL,SEA,06:00,06:05,08:30,08:41,0,0,
+AA,200,2024-07-02,DFW,ORD,09:00,,11:00,,1,0,B

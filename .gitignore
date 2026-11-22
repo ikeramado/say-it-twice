@@ -1,0 +1,41 @@
+# Secrets stay out of git; config/keys.example lists the variables without their values.
+.env
+.env.*
+# The Claude Code sandbox masks these with /dev/null when they do not exist, which breaks
+# `git add -A`. Add a real one once with `git add -f`; tracked files are not ignored.
+/.bash_profile
+/.bashrc
+/.zshrc
+/.zprofile
+/.profile
+/.gitconfig
+/.gitmodules
+/.ripgreprc
+/.mcp.json
+/.idea
+/.vscode
+/.claude/.cc-writes
+/.claude/agents
+/.claude/commands
+/.claude/hooks
+/.claude/launch.json
+/.claude/loop.md
+/.claude/output-styles
+/.claude/routines
+/.claude/scheduled_tasks.json
+/.claude/settings.local.json
+/.claude/skills
+/.claude/workflows
+
+# Data and runs (data/labels/ is tracked)
+data/raw/
+data/clean/
+data/quarantine/
+runs/
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+
+# Labeling sheets and answers stay out of git (T11)
+labeling/work/

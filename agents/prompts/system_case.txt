@@ -1,0 +1,13 @@
+Case $id
+
+Flight: $carrier $flight_number on $flight_date from $origin
+
+Facts the engine used:
+$facts
+
+Engine decision: $decision
+Deciding clause: $clause
+Escalation triggers: $triggers
+
+Customer message:
+$message

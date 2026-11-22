@@ -1,0 +1,259 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Method and limits</title><link rel="stylesheet" href="style.css"></head><body><div class="story"><header class="col"><h1 class="left">Method and limits</h1><p>what we measured and what we did not</p><p><a class="mail" href="index.html">Back to the story</a></p></header><section id="registered" class="team"><h2>What was measured, and what is exploratory <span class="mark">for your team</span></h2><p>What was measured is the study registered before the confirmatory run (tag <code>prereg-v1</code>); sections 1 and 6 of the registration follow as written. Anything not named there is exploratory and labeled so wherever it is shown.</p><h3>1. Study information</h3><ul><li><strong>Title:</strong> Who decides: consistency and correctness of customer-facing agents when the policy is in the prompt versus in code.</li><li><strong>Author:</strong> iker amado</li><li><strong>Description:</strong> Three agents decide whether a ticket refund is owed for real US domestic flights of two airlines, under the federal refund rule in force on the flight date plus the airline&#x27;s own published refund policy: a naive agent (rules in the prompt), a cheap-strong agent (the naive agent sampled five times, majority vote) and a system (versioned rule engine, agent gathers facts with tools scoped to the customer&#x27;s airline, explains and escalates on fixed triggers). Each case is run ten times per agent. Labels come from the rule texts, written before the engine exists.</li><li><strong>Confirmatory hypotheses:</strong><ul><li><strong>H1 (consistency):</strong> the share of test cases with the same decision in all ten runs is higher for the system than for the naive agent and than for the cheap-strong agent. Confirmed if the 95% interval of each paired difference is entirely above zero.</li><li><strong>H2 (critical errors):</strong> wrong decisions plus missed escalations per 100 runs (each also reported apart) are fewer for the system than for the naive agent and than for the cheap-strong agent. Confirmed if the 95% interval of each paired difference is entirely below zero.</li><li><strong>H3 (adversarial):</strong> the adversarial change share (section 5: per run, averaged over the adversarial cases) is lower for the system than for the naive agent. Confirmed if the 95% interval of the paired difference is entirely below zero.</li></ul></li><li><strong>Expected direction:</strong> as stated; magnitudes unknown. The system is expected to escalate more often; that is reported.</li></ul><h3>6. Analysis plan</h3><ul><li><strong>Primary metric:</strong> H1 consistency share; H2 critical errors per 100 runs (wrong decisions + missed escalations, each also reported apart); H3 adversarial change share; all at the frozen operating point.</li><li><strong>Secondary:</strong> correct share; unnecessary escalations per 100 runs; version errors; invented entitlements; policy leaks per 100 runs; results by case type and by airline; agreement with the DOT external subset; cost per correct decision; latency per answer.</li><li><strong>Operating point rule:</strong> trigger thresholds (boundary window, amount threshold) are chosen on the full development set to minimize critical errors, then unnecessary escalations, then the smaller window; frozen at registration.</li><li><strong>Error costs:</strong> critical errors are never averaged with escalations. For the cost view, an escalation costs 3 minutes of agent time at USD 40/hour (USD 2); fixed now.</li><li><strong>Trade-off curves:</strong> escalation rate vs critical-error rate for the system across trigger settings, computed on the full development set (section 7 grid; descriptive); accuracy vs dollars for the three agents.</li><li><strong>Cost:</strong> dollars per correct decision for each agent, from <code>costs.jsonl</code>.</li><li><strong>Inference:</strong> paired cluster bootstrap by carrier-month, 10,000 resamples, 95% percentile intervals.</li><li><strong>Criterion:</strong> as in each hypothesis; null results reported with the same prominence.</li><li><strong>Exclusions:</strong> cases with unresolved labeling disagreement; cases whose flight date the version table cannot pin down (renumbered cases on 2026-07-01 to 07-06); counts reported. A purchase date in an airline-policy gap is not excluded: the candidate versions are weighed, and a missing purchase date weighs &quot;no saved policy&quot; too (ADR-0005); only a purchase date before any covered day stays excluded.</li><li><strong>Missing data:</strong> a run that errors, times out or fails on the network counts as <code>escalate</code> (the decision mapping rule, section 5) for consistency and as an unnecessary or correct escalation per the label; error counts reported. A run stopped by the cost gate is not a result: the confirmatory run is restarted from its cache, or the stop is recorded in section 8.</li><li><strong>Exploratory analyses, labeled as such wherever results are shown:</strong> larger model; the prospective set.</li><li><strong>Limitation, declared:</strong> the study model rejects a non-default temperature (and top_p, top_k) with a 400, so no analysis at a non-default temperature is run; consistency is measured at the provider&#x27;s default temperature, which is how agents run.</li><li><strong>Limitation, declared:</strong> the amount trigger is inactive (no case has an amount), and the boundary window is 0 min (frozen in section 7), so the boundary trigger fires only on a delay exactly at the threshold that decides the case.</li></ul></section><section id="fears" class="team"><h2>What a buyer fears, and the number for each <span class="mark">for your team</span></h2><div class="scroll"><table><tr><th>Fear and what the system does</th><th>Number</th><th>Naive</th><th>System</th></tr><tr><td><strong>It never invents packages or prices</strong><br>The agent does not decide; a rule engine in code does. The agent gathers facts with tools and explains, citing the rule.</td><td>Wrong decisions per 100 runs</td><td>7.62</td><td>0.00</td></tr><tr><td><strong>Inconsistency</strong><br>Every case is run ten times per agent.</td><td>Cases where all ten decisions agree</td><td>83.8%</td><td>100.0%</td></tr><tr><td><strong>When to use AI and when plain logic</strong><br>The AI gathers and explains; logic decides.</td><td>Correct decisions<br>Gap, system minus naive: +24.6 pts</td><td>70.8%</td><td>95.4%</td></tr><tr><td><strong>Hand over to a person when needed</strong><br>Fixed triggers: missing facts, a boundary case, an out-of-scope request. Escalating everything is also a failure.</td><td>Unnecessary escalations per 100 runs</td><td>9.92</td><td>0.00</td></tr><tr><td></td><td>Needed escalations per 100 runs</td><td>0.62</td><td>7.69</td></tr><tr><td><strong>Applying the wrong rule for the date</strong><br>The rule engine is versioned by date.</td><td>Decisions citing a version not in force, per 100 runs</td><td>26.38</td><td>2.31</td></tr><tr><td><strong>The customer talks it out of the rules</strong><br>Adversarial messages are part of the cases; the target is zero.</td><td>Adversarial change share, per run</td><td>10.5%</td><td>0.0%</td></tr><tr><td><strong>One client&#x27;s data used with another client</strong><br>Two airlines with their own policies; the tools are scoped to the customer&#x27;s airline.</td><td>Uses of the other airline&#x27;s policy per 100 runs</td><td>0.00</td><td>0.00</td></tr></table></div><p>Of the pattern-3 solution, this piece does not cover consent. Of the evidence buyers ask for, it does not give an agent deployed with real users: it is a public piece with real flights and constructed cases.</p></section><section id="limitations" class="team"><h2>Limitations <span class="mark">for your team</span></h2><ul><li>This page evaluates agents against published rule text. It is not legal advice.</li><li>The study model rejects a non-default temperature (and top_p, top_k) with a 400, so no analysis at a non-default temperature is run; consistency is measured at the provider&#x27;s default temperature, which is how agents run.</li><li>The amount trigger is inactive (no case has an amount), and the boundary window is 0 minutes, so the boundary trigger fires only on a delay exactly at the threshold that decides the case.</li></ul><p>Limitation: the study reads a domestic arrival delay of 3 hours or more as a refund even when the passenger flew the delayed flight. The saved rule texts (49 U.S.C. 42305(a), 14 CFR 260.6) owe that refund only to a passenger who chooses not to fly it, and no test case says the passenger did not fly. The registered labels and numbers are unchanged. A sensitivity analysis decided after the results reads the 21 refund labels that rest on a delay as no_refund (none says the passenger did not fly): the system then makes 20.77 critical errors per 100 runs (registered 4.62), and H2&#x27;s difference with its 95% interval is system minus naive 2.15 [-4.45, 7.99], system minus cheap_strong 2.62 [-4.17, 8.31] (H2 not confirmed). The reading is in ADR-0008 (docs/decisions/0008-delay-refund-when-the-passenger-did-not-fly.md).</p><p>What is constructed: the passenger facts (such as a purchase date) and the customer messages are made up to stand for what a client would supply from its own system, and are labeled as constructed in every case that uses them. The flights are real (BTS data).</p><p><a href="https://www.transportation.gov/airconsumer/refunds">DOT's refund page</a> states the rules this page checks agents against.</p></section><section id="chatbots-section" class="team"><h2>How the delay error was caught <span class="mark">for your team</span></h2><div class="chatbots" id="chatbots"><h3>Popular chatbots, asked by hand</h3><p><strong>exploratory, small sample, not part of the registered study</strong>. Each chatbot was asked the same four questions once, as written in the protocol. A person marked each answer as right or wrong and whether it invented an entitlement or amount the rule in force does not give. One answer per chatbot is quoted in full.</p><div class="scroll"><table><tr><th>Chatbot</th><th>Answers that invented an entitlement or amount</th><th>Right decisions</th><th>Asked on</th></tr><tr><td>chatgpt</td><td>0 of 4</td><td>4 of 4</td><td>2026-11-20</td></tr><tr><td>gemini</td><td>0 of 4</td><td>4 of 4</td><td>2026-11-20</td></tr><tr><td>meta-ai</td><td>0 of 4</td><td>4 of 4</td><td>2026-11-20</td></tr></table></div><h4>chatgpt, q1, asked 2026-11-20 (its first answer)</h4><blockquote style="white-space: pre-wrap">Under US federal law, you were entitled to a **full refund of your ticket**, because Delta cancelled your flight and you chose not to travel on an alternative flight.
+
+The fact that you purchased the ticket on February 6, 2025, and the scheduled departure was March 8, 2025, does not change this entitlement.
+
+Your situation falls under the US Department of Transportation (DOT) airline refund regulations, which were already in effect when you purchased your ticket.
+
+## **1. Your legal entitlement: a full refund**
+
+Under **14 CFR § 260.6**, when an airline cancels a flight, passengers are entitled to a refund if they do not accept alternative transportation or a travel credit.
+
+For your DL309 flight (Honolulu–Atlanta), this means:
+
+- **100% of the ticket price:** Delta must refund the amount you paid.
+
+- **Original form of payment:** The refund must generally go back to the original payment method.
+
+- **Taxes and fees:** The refund must include applicable taxes and fees associated with the unused ticket.
+
+- **No travel credit requirement:** Delta cannot force you to accept a voucher or credit instead of a refund.
+
+
+You do not have to prove that Delta was responsible for the circumstances causing the cancellation. The cancellation itself triggers the refund entitlement.
+
+## **2. When should Delta have refunded you?**
+
+The applicable refund deadlines were:
+
+|Original payment method|Refund deadline|
+|---|---|
+|Credit card|7 business days|
+|Cash, check or other payment methods|20 calendar days|
+
+These deadlines apply once the refund becomes due under the regulation. If Delta offered an alternative flight and you did not accept it or travel on it, the refund was still required.
+
+The DOT also requires refunds to be automatic in these circumstances. You should not have needed to submit a conventional refund request first.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&amp;sz=32)
+
+US Department of Transportation+1
+
+## **3. Are you entitled to additional compensation?**
+
+This is an important distinction.
+
+US federal law generally does not require airlines to pay passengers additional cash compensation simply because a flight was cancelled.
+
+Your rights break down as follows:
+
+|Type of compensation|Legal entitlement|
+|---|---|
+|Full ticket refund|Yes|
+|Refund of unused ancillary services|Yes|
+|Additional compensation for inconvenience|Generally no|
+|Compensation for lost vacation time|Generally no|
+|Punitive damages simply because of cancellation|No automatic entitlement|
+|Hotel and meal expenses|Not generally guaranteed by federal law|
+
+Delta may have additional obligations under its Contract of Carriage, particularly if the cancellation was within its control. Those obligations are separate from the statutory refund entitlement.
+
+![](https://www.google.com/s2/favicons?domain=https://www.delta.com&amp;sz=32)
+
+Delta Air Lines+1
+
+## **4. An important issue: the one-year deadline**
+
+There is one complication because your flight dates are now in the past.
+
+Delta&#x27;s currently published US Contract of Carriage, Rule 22(C), contains a provision stating that refund requests must be received within one year of the original ticket issue date.
+
+![](https://www.google.com/s2/favicons?domain=https://www.delta.com&amp;sz=32)
+
+Delta Air Lines
+
+For your ticket:
+
+- Ticket purchase: February 6, 2025.
+
+- Scheduled flight: March 8, 2025.
+
+- One-year anniversary of purchase: February 6, 2026.
+
+- Today: November 20, 2026.
+
+
+**However, there is an important legal distinction:** the DOT regulation required an automatic refund following the cancellation. It did not make your right dependent on submitting a refund request within Delta&#x27;s ordinary voluntary-refund process.
+
+Furthermore, Delta&#x27;s current contract says that the applicable contract is generally the version in effect when the ticket was purchased. We would need to establish the exact February 2025 wording before assessing how Delta might invoke its one-year provision.
+
+I would not assume that you have automatically lost your statutory claim.
+
+## **5. What I recommend doing**
+
+I would pursue this in two stages:
+
+1. Submit a formal written refund demand to Delta, citing 14 CFR § 260.6 and explaining that the airline failed to provide the mandatory automatic refund.
+
+2. If Delta refuses or does not resolve the matter, file a complaint with the US Department of Transportation.
+
+
+Official resources:
+
+- [14 CFR § 260.6 – Federal refund regulation](https://www.law.cornell.edu/cfr/text/14/260.6?utm_source=chatgpt.com)
+
+- [DOT – Airline refund rights](https://www.transportation.gov/individuals/aviation-consumer-protection/refunds?utm_source=chatgpt.com)
+
+- [File a complaint with the DOT](https://www.transportation.gov/airconsumer/file-consumer-complaint?utm_source=chatgpt.com)
+
+
+The DOT complaint process requires airlines to acknowledge complaints within 30 days and provide substantive written responses within 60 days.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&amp;sz=32)
+
+US Department of Transportation+1
+
+## **6. I need three details to assess your claim more precisely**
+
+There are three facts that could materially affect how you pursue this:
+
+**1. How did you pay for the ticket?**
+
+Credit card
+
+Debit card
+
+Cash / other
+
+Airline miles
+
+**2. Where did you purchase the ticket?**
+
+Directly from Delta
+
+Online travel agency (Expedia, etc.)
+
+Travel agent
+
+**3. Did Delta ever refund you or issue a travel credit?**
+
+No refund or credit received
+
+Travel credit only
+
+Partial refund
+
+Full refund
+
+**Additional details (optional)**
+
+**My main concern:** if Delta cancelled your flight, you never travelled, and you received no refund, this is not simply a request for goodwill compensation. It potentially involves Delta&#x27;s failure to comply with a federal refund obligation.
+</blockquote><h4>gemini, q1, asked 2026-11-20 (its first answer)</h4><blockquote style="white-space: pre-wrap">Under U.S. Department of Transportation (DOT) regulations, you are legally entitled to a **full monetary refund** of your ticket and any unused ancillary fees, returned to your original form of payment.
+
+Department of Transportation
+
+Because your flight was canceled and you chose not to accept any alternative transportation, U.S. federal law (including the DOT&#x27;s Automatic Refund Rule, which took full effect in October 2024) establishes the following rights:
+
+### 1. Full Refund of Ticket and Fees
+
+- **Base Fare &amp; Taxes:** You are owed 100% of the unused ticket purchase price, including all government-imposed taxes and airline-imposed fees—even if you purchased a non-refundable ticket (such as Basic Economy).
+
+    Department of Transportation
+
+- **Ancillary Fees:** You are also entitled to a full refund of any extra fees you paid for services you could not use due to the cancellation, such as checked baggage fees, seat selection fees, or onboard Wi-Fi.
+
+- **Regardless of Cause:** This right applies no matter _why_ Delta canceled the flight (whether due to mechanical issues, staffing, or severe weather).
+
+    US Airways Center
+
+
+### 2. Cash/Original Payment vs. Vouchers
+
+- **No Forced eCredits:** Delta cannot force you to accept a travel credit or voucher in place of a monetary refund. They may only issue a voucher if you explicitly opt for one.
+
+    US Airways Center
+
+- **Automatic Issuance:** Under DOT rules, if you reject or do not respond to an airline&#x27;s offer for rebooking or a voucher and do not fly, the airline is required to issue the refund automatically without you needing to jump through hoops. _(Note: If you booked through a third-party travel agency rather than directly with Delta, the merchant of record that processed your payment is responsible for issuing the refund.)_
+
+    US Airways Center
+
+
+### 3. Legal Refund Deadlines
+
+- **Credit Card Purchases:** Within **7 business days**.
+
+    US Airways Center
+
+- **Other Payment Methods (Cash, Check, Debit):** Within **20 calendar days**.
+
+    US Airways Center
+
+
+### What You Are _Not_ Entitled To Under U.S. Law
+
+Unlike regulations in the European Union (EU261) or the UK (UK261), **U.S. federal law does not require airlines to pay additional cash compensation** for inconvenience, lost time, or consequential damages (such as missed hotel nights, rental cars, or cruise departures) resulting from a canceled domestic flight.
+
+Travel Tourister
+
+Additionally, because you opted not to travel rather than wait for a rebooked flight, Delta is not legally obligated under federal law to cover meals or hotel accommodations.
+
+Squaremouth
+
+### Next Steps if You Haven&#x27;t Received Your Money
+
+If Delta has not refunded your original payment method—or if they converted your ticket into a Delta eCredit without your consent—you can:
+
+1. Submit a direct refund request through Delta’s official refund portal using your ticket/confirmation number.
+
+    Travel Tourister
+
+2. File a formal consumer complaint with the **U.S. Department of Transportation (DOT)** online, which legally requires the airline to respond to you and the agency within 30 to 60 days.
+
+    Travel Tourister
+
+3. Initiate a credit card chargeback with your card issuer citing services not rendered.
+</blockquote><h4>meta-ai, q1, asked 2026-11-20 (its first answer)</h4><blockquote style="white-space: pre-wrap">You were entitled to a **full, automatic cash refund** — not a voucher or credit.
+
+Your facts fit the rule exactly:
+
+- **Flight:** Delta Air Lines DL309, Honolulu (HNL) to Atlanta (ATL), 8 March 2025 — a domestic U.S. flight
+- **Ticket bought:** 6 February 2025
+- **Delta cancelled** the flight
+- **You did not take any alternative flight**
+
+### What the refund must cover
+
+Under the DOT&#x27;s Refunds and Other Consumer Protections rule, when a U.S. carrier cancels a flight to, from, or within the United States and the passenger does not accept alternative transportation or travel credits/vouchers/other compensation, the airline must provide an automatic refund.
+
+That applies **even if you bought a non-refundable ticket**, and **regardless of why Delta cancelled** — weather, maintenance, crew, operational reasons, etc. do not change the refund right for a cancellation where you don&#x27;t travel.
+
+The refund must be to your **original form of payment**, and must include:
+
+- The full airfare
+- Taxes and government fees included in the ticket price
+- Ancillary fees for services you paid for but did not receive — for example, checked-bag fees, seat-selection fees, Wi-Fi or other paid extras for that flight
+
+The DOT also requires refunds for ancillary services paid for but not received.
+
+### How fast Delta had to pay
+
+- **Credit card purchase:** within **7 business days**
+- **Other forms of payment:** within **20 calendar days**
+
+The rule requiring automatic refunds for cancelled flights was in effect by 28 October 2024, so it fully covered your March 2025 flight.
+
+You did **not** have to request it — Delta was supposed to issue it automatically. The rule was specifically designed to stop airlines making passengers chase refunds they were owed.
+
+### What you are _not_ entitled to under U.S. law
+
+Unlike the EU/UK under EU261, U.S. law does **not** require Delta to pay additional cash compensation for inconvenience, lost time, missed connections, or a hotel/meals simply because it cancelled a domestic flight.
+
+Delta may offer those things as customer service, especially for a controllable cancellation, and its Contract of Carriage / customer-service plan may promise rebooking, meals, or lodging in some situations — but that is airline policy, not a DOT statutory compensation entitlement.
+
+### Practical points for your case
+
+1. **Do not accept a voucher/credit if you want cash.** If you accept alternative transportation, a travel credit, voucher, or other compensation in lieu of a refund, you generally lose the automatic-refund right for that ticket.
+2. **Check the original payment method.** If you paid by card, look for the full amount, not a Delta eCredit.
+3. **If you never got it:** contact Delta with the ticket number, date of purchase, and flight details and ask for the automatic refund under 14 CFR Part 260. If Delta refuses or only offers credit, you can file a complaint with the DOT&#x27;s Office of Aviation Consumer Protection and, for a card purchase, consider a chargeback with your card issuer using the cancellation as the basis.
+
+In short: **full ticket price + taxes/fees + unused ancillary fees, back to your original payment method, automatically and promptly** — and no extra U.S. statutory delay/cancellation compensation on top of that.
+</blockquote><p><a href="chatbots/protocol.html">The protocol, as asked</a></p></div></section><section id="eligible-section" class="team"><h2>Eligible flights and the passenger bound <span class="mark">for your team</span></h2><p id="eligible"><strong>Descriptive, not part of the registered study.</strong> From 2024-10-28 to the end of 2026-08, 127,625 domestic flights of Delta and American were cancelled or arrived 3 hours or more late. Up to 17,230,678 passengers (an upper bound, not a count). <a href="#eligible-method">Method</a></p><details id="eligible-method"><summary>How this is counted</summary><p>Flights: the clean BTS on-time data, Delta (DL) and American (AA), every flight dated 2024-10-28 (the v2 compliance date) or later that was cancelled, or whose recorded arrival was 180 minutes or more after the scheduled one (the three-hour domestic threshold of v2, clause v2-260.2-delay). A diverted flight counts only through its recorded arrival delay, which BTS leaves empty unless the flight reached a destination. The threshold is the same in v3 and v4.</p><p>Passengers: BTS T-100 segment data, domestic rows. Each eligible flight takes its carrier-route-month's PASSENGERS divided by its DEPARTURES_PERFORMED; the figure is the sum over the eligible flights, with a carrier-route-month's share capped at its own PASSENGERS. A flight whose carrier-route-month T-100 lacks adds nothing: 2 flights here. Passengers who changed plans or did not ask for a refund are not removed, and a delayed passenger is owed the refund only if they did not fly the delayed flight (49 U.S.C. 42305(a); ADR-0008), which the data cannot tell, so it is an upper bound.</p><table><tr><th>Month</th><th>Delta</th><th>American</th></tr><tr><td>2024-10</td><td>23</td><td>108</td></tr><tr><td>2024-11</td><td>449</td><td>1,283</td></tr><tr><td>2024-12</td><td>1,012</td><td>2,251</td></tr><tr><td>2025-01</td><td>3,411</td><td>3,924</td></tr><tr><td>2025-02</td><td>1,079</td><td>1,955</td></tr><tr><td>2025-03</td><td>1,569</td><td>2,861</td></tr><tr><td>2025-04</td><td>1,437</td><td>2,669</td></tr><tr><td>2025-05</td><td>1,492</td><td>3,216</td></tr><tr><td>2025-06</td><td>3,392</td><td>4,797</td></tr><tr><td>2025-07</td><td>3,264</td><td>6,195</td></tr><tr><td>2025-08</td><td>1,685</td><td>4,043</td></tr><tr><td>2025-09</td><td>751</td><td>2,361</td></tr><tr><td>2025-10</td><td>1,282</td><td>2,074</td></tr><tr><td>2025-11</td><td>2,547</td><td>3,182</td></tr><tr><td>2025-12</td><td>4,060</td><td>2,018</td></tr><tr><td>2026-01</td><td>4,093</td><td>8,725</td></tr><tr><td>2026-02</td><td>2,270</td><td>2,729</td></tr><tr><td>2026-03</td><td>4,513</td><td>3,666</td></tr><tr><td>2026-04</td><td>1,455</td><td>2,032</td></tr><tr><td>2026-05</td><td>2,000</td><td>3,144</td></tr><tr><td>2026-06</td><td>2,190</td><td>5,079</td></tr><tr><td>2026-07</td><td>4,228</td><td>5,312</td></tr><tr><td>2026-08</td><td>2,383</td><td>3,416</td></tr></table></details></section><section id="adr" class="team"><h2>ADR-0008, the delay refund <span class="mark">for your team</span></h2><p>ADR-0008 was decided after the results; nothing registered changed. Its decision, as written:</p><p>Chosen: <strong>3</strong>, because the registration is frozen (prereg section 3) and the texts are clear.</p><p>This ADR states the reading, and <code>python -m eval.delays</code> (output in <code>docs/results/delays.md</code>)</p><p>computes, from the frozen runs and labels, a sensitivity analysis decided after the results.</p></section><footer class="col"><p><a class="mail" href="index.html">Back to the story</a></p>This page evaluates agents against published rule text and is not legal advice.</footer></div></body></html>

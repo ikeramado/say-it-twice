@@ -1,0 +1,4 @@
+carrier,flight_number,date,origin,destination,scheduled_departure,actual_departure,scheduled_arrival,actual_arrival,cancelled,diverted,cancellation_code,departure_delay,arrival_delay
+DL,5,2024-11-02,JFK,ATL,0800,0805,1000,,0,1,,5,
+DL,6,2024-11-02,JFK,ATL,0800,0805,1000,1200,0,1,,5,200
+UA,7,2024-11-02,JFK,ATL,0800,,1000,,1,0,A,,

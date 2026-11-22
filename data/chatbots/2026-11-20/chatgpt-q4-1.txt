@@ -1,0 +1,124 @@
+## **Your rights under US law**
+
+**You are generally not entitled to automatic cash compensation under US federal law for this delay.** Even though your Delta flight arrived 232 minutes (3 hours and 52 minutes) late, US law does not impose a general requirement on airlines to compensate passengers financially for lengthy delays when they ultimately complete their journey.
+
+There is, however, an important distinction between compensation, refunds, and other assistance.
+
+### **1. Refund of your ticket**
+
+Under the Department of Transportation's (DOT) significant-delay rules, a domestic flight arriving **3 hours or more after its scheduled arrival time** qualifies as a significantly delayed flight.
+
+Your delay was 3 hours and 52 minutes, so it exceeds that threshold.
+
+However, the refund entitlement depends on whether you travel:
+
+- If you had rejected the delayed flight and chosen not to travel, you would have been entitled to a full refund, including applicable taxes and ancillary fees.
+
+- Because you completed the journey, you are **not entitled to a ticket refund under the DOT rules**.
+
+
+This applies even if your ticket was non-refundable.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&sz=32)
+
+US Department of Transportation+1
+
+### **2. Meals and accommodation**
+
+Delta has made specific commitments to passengers affected by delays within its control.
+
+|Benefit|Your potential entitlement|
+|---|---|
+|Meal or meal voucher|Yes, if the delay caused you to wait at least 3 hours beyond scheduled departure|
+|Hotel accommodation|Yes, if the controllable delay inconvenienced you overnight away from home or your destination|
+|Ground transportation|Yes, when eligible for Delta-provided overnight accommodation|
+|Rebooking|Next available flight at no additional cost, where applicable|
+
+These are Delta's published customer-service commitments, not automatic cash compensation under federal law.
+
+Importantly, the 3-hour meal threshold is measured from scheduled departure, not scheduled arrival. Your 232-minute arrival delay alone does not establish that you met this condition.
+
+![](https://www.google.com/s2/favicons?domain=https://www.delta.com&sz=32)
+
+Delta Air Lines+1
+
+### **3. Cash compensation for the 3-hour-52-minute delay**
+
+No automatic compensation
+
+Unlike EU Regulation 261/2004, US federal aviation law does not establish a fixed compensation payment based on the length of a domestic flight delay.
+
+Consequently, you cannot automatically claim:
+
+- $250, $400, or $600 based on delay duration.
+
+- A percentage of your ticket price.
+
+- A fixed payment for inconvenience or lost time.
+
+
+Delta can nevertheless voluntarily offer compensation, including:
+
+- Cash equivalents or gift cards.
+
+- Travel credits or vouchers.
+
+- SkyMiles.
+
+
+Delta expressly reserves discretion to provide these benefits depending on the individual circumstances.
+
+![](https://www.google.com/s2/favicons?domain=https://www.delta.com&sz=32)
+
+Delta Air Lines+2
+
+### **4. Does the cause of the delay matter?**
+
+Yes. It matters particularly for Delta's customer-service commitments.
+
+Examples of controllable causes include:
+
+- Mechanical or maintenance problems.
+
+- Crew scheduling problems.
+
+- Aircraft cleaning.
+
+- Baggage loading and fueling.
+
+
+Weather and air traffic control restrictions are generally outside Delta's control.
+
+The DOT can hold airlines accountable for failing to honor their published commitments for controllable delays.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&sz=32)
+
+US Department of Transportation+1
+
+### **5. What can you claim?**
+
+For your particular flight:
+
+|Potential claim|Entitlement|
+|---|---|
+|Automatic statutory cash compensation|No|
+|Full ticket refund|No, because you traveled|
+|Meal reimbursement/voucher|Potentially, subject to Delta's conditions|
+|Hotel and transportation|Only if applicable overnight conditions were met|
+|Goodwill compensation|Possible, at Delta's discretion|
+|DOT complaint|Yes, if Delta violated applicable obligations|
+
+### **6. How to pursue a claim**
+
+1. Contact Delta through its [Customer Care portal](https://www.delta.com/us/en/need-help/overview?utm_source=chatgpt.com).
+
+2. Identify flight DL308, February 24, 2026, and the 232-minute arrival delay.
+
+3. Request compensation for the inconvenience and reimbursement of any eligible expenses, attaching receipts.
+
+4. If Delta fails to honor its published commitments, submit a complaint through the [US Department of Transportation](https://www.transportation.gov/airconsumer/file-consumer-complaint?utm_source=chatgpt.com).
+
+
+**Bottom line:** Your 3-hour-52-minute delay qualifies as a significant delay under US refund rules, but because you completed the journey, you are not entitled to a refund. US law does not guarantee additional cash compensation. Your strongest potential claim is for benefits under Delta's customer-service commitments or discretionary goodwill compensation.
+
+_Legal framework: US domestic air travel, as applicable to February 24, 2026._

@@ -1,0 +1,53 @@
+On those facts, under US law: **nothing in cash compensation, and no refund.**
+
+That surprises most people because it is the opposite of the EU system, but for a domestic US flight there is no US equivalent of EU261.
+
+### 1. No statutory compensation for a delay
+
+> "Contrary to popular belief, for domestic itineraries, airlines are not required to compensate passengers whose flights are delayed or canceled," the Department of Transportation states.
+
+> "Airlines operating domestic routes in the United States are not required to pay passengers anything for a delayed flight, no matter how long the delay lasts."
+
+Compensation is legally required in the US only in a different situation: when you are **involuntarily denied boarding** from an oversold flight. Your flight was not cancelled and you were not bumped, so that rule does not apply.
+
+The proposed rule that would have created fixed cash compensation for US delays was withdrawn. As one summary puts it: "On November 17, 2025, the USDOT withdrew the Airline Passenger Rights proposal that would have required fixed cash compensation."
+
+EU261 does not help you here either. It applies to flights departing the EU, and to EU-carrier flights into the EU. LAX to JFK on American Airlines is a purely domestic US flight.
+
+### 2. No refund either, because 146 minutes is below the threshold
+
+US law does give you a **refund** — not compensation — if you choose _not_ to travel after a cancellation or a significant change.
+
+> "You are owed a **refund** when the airline cancels or significantly changes your flight (domestic: departure or arrival 3+ hours off schedule; international: 6+ hours) and you decline the alternative."
+
+> "The DOT's 2024 final rule entitles you to a cash refund if you choose not to travel when a domestic flight is delayed three or more hours."
+
+Your delay was:
+
+**146 minutes = 2 hours 26 minutes**
+
+That is **34 minutes short of the 3-hour domestic threshold** in 14 CFR Part 260.
+
+And critically, you _did_ travel — you arrived, just late. The refund right only applies if you decline to travel. Since you flew, there is no refund to claim for this flight.
+
+### 3. What about American's own promises?
+
+This is separate from law. It comes from American's commitments on the DOT Airline Customer Service Dashboard, which apply only when the delay was **within American's control** — e.g. mechanical, crew, operational — not weather, air traffic control, or other outside causes.
+
+For a controllable delay, American commits to:
+
+- **Meal or meal voucher when the delay results in a wait of 3 hours or more**
+- **Complimentary hotel for an overnight delay**, plus ground transportation
+- **Rebooking** on American, or on a partner if needed
+
+American does **not** commit on the dashboard to cash compensation, travel credits, or miles for delays.
+
+On your numbers, even the meal commitment would not have been triggered by arrival delay alone, because that commitment is based on a **3+ hour wait**, and you arrived 2h 26m late. If you in fact waited 3+ hours at LAX before departure for a controllable reason, you could still ask American Customer Relations for the meal voucher — but that is a customer-service commitment, not a legal entitlement to cash.
+
+### Bottom line for AA28, 8 March 2025
+
+- **Cash compensation under US law:** $0 — no such right exists for a delay
+- **Refund under US law:** No — 146 minutes is under the 3-hour significant-delay threshold, and you completed the trip
+- **Meal / hotel:** Only if the delay was controllable _and_ you met American's 3-hour wait / overnight thresholds, which your 146-minute arrival delay alone does not show
+
+If you had provable out-of-pocket losses caused by the late arrival — e.g. a missed prepaid connection or hotel night you could not use — that would be a claim under American's contract of carriage / general contract law for consequential damages, not a statutory delay payment, and American would dispute it if the cause was outside its control.

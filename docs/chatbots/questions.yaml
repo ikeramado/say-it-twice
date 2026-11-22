@@ -1,0 +1,110 @@
+# The questions of docs/chatbots/protocol.md, machine readable (card T54, ADR-0006).
+# Each is tied to a real BTS flight of data/clean/flights/ and to the rule version in force on its
+# date. expected_decision is agents.system.engine.decide on the stated facts (refund | no_refund);
+# not_given is eval/entitlements.yaml's vocabulary minus the phrases the rule version and the
+# airline policy version list. q4 differs: its expected_decision follows ADR-0008 (a passenger who
+# flew is not owed the delay refund), which the engine does not read; see travelled and clause. tests/test_chatbots.py checks all of it against the code and BTS.
+chatbots:
+- chatgpt
+- gemini
+- meta-ai
+repeats: 1
+not_before: '2026-11-20'
+questions:
+- id: q1
+  carrier: DL
+  flight_number: '309'
+  origin: HNL
+  destination: ATL
+  date: '2025-03-08'
+  facts:
+    cancelled: true
+    alternative_accepted: false
+    purchase_date: '2025-02-06'
+  rule_version: v2
+  policy_version: DL-2024-10-28
+  expected_decision: refund
+  not_given:
+  - automatic refund
+  - travel credit
+  - voucher
+  - compensation
+  - rebooking
+  text: >-
+    I bought a Delta Air Lines ticket on 6 February 2025 for flight DL309 from Honolulu (HNL) to
+    Atlanta (ATL) on 8 March 2025. Delta cancelled the flight. I did not take any alternative
+    flight. What am I entitled to under US law?
+- id: q2
+  carrier: AA
+  flight_number: '28'
+  origin: LAX
+  destination: JFK
+  date: '2025-03-08'
+  facts:
+    cancelled: false
+    arrival_delay_min: 146
+    purchase_date: '2025-02-06'
+  rule_version: v2
+  policy_version: AA-2024-10-28
+  expected_decision: no_refund
+  not_given:
+  - travel credit
+  - voucher
+  - compensation
+  - rebooking
+  text: >-
+    I bought an American Airlines ticket on 6 February 2025 for flight AA28 from Los Angeles (LAX)
+    to New York (JFK) on 8 March 2025. The flight was not cancelled, but I arrived 146 minutes
+    (2 hours 26 minutes) after the scheduled arrival time. What am I entitled to under US law?
+- id: q3
+  carrier: AA
+  flight_number: '9'
+  origin: ABQ
+  destination: DFW
+  date: '2024-06-02'
+  facts:
+    cancelled: true
+    alternative_accepted: true
+    purchase_date: '2024-05-03'
+  rule_version: v1
+  policy_version: AA-2024-04-12
+  expected_decision: no_refund
+  not_given:
+  - automatic refund
+  - travel credit
+  - voucher
+  - compensation
+  - rebooking
+  text: >-
+    I bought an American Airlines ticket on 3 May 2024 for flight AA9 from Albuquerque (ABQ) to
+    Dallas-Fort Worth (DFW) on 2 June 2024. American cancelled the flight and I accepted the
+    alternative flight it offered me. What am I entitled to under US law?
+- id: q4
+  carrier: DL
+  flight_number: '308'
+  origin: CVG
+  destination: ATL
+  date: '2026-02-24'
+  facts:
+    cancelled: false
+    arrival_delay_min: 232
+    purchase_date: '2026-01-25'
+    travelled: true
+  rule_version: v3
+  policy_version: DL-2025-10-08
+  expected_decision: no_refund
+  decided_by_clause: v1-42305-refund
+  not_given:
+  - full refund
+  - refund of taxes and fees
+  - refund within 7 business days
+  - refund within 20 days
+  - automatic refund
+  - travel credit
+  - voucher
+  - compensation
+  - rebooking
+  text: >-
+    I bought a Delta Air Lines ticket on 25 January 2026 for flight DL308 from Cincinnati (CVG)
+    to Atlanta (ATL) on 24 February 2026. The flight was not cancelled, but I arrived 232 minutes
+    (3 hours 52 minutes) after the scheduled arrival time. What am I entitled to under US law?

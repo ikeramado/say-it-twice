@@ -1,0 +1,2 @@
+carrier,flight_number,date,origin,destination,scheduled_departure,actual_departure,scheduled_arrival,actual_arrival,cancelled,diverted,cancellation_code,departure_delay,arrival_delay
+DL,1832,2025-12-01,ATL,LGA,0800,0900,1000,1309,0,0,,60,189

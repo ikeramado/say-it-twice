@@ -1,0 +1,149 @@
+Under US federal law, you were entitled to a **full refund of your ticket**, because Delta cancelled your flight and you chose not to travel on an alternative flight.
+
+The fact that you purchased the ticket on February 6, 2025, and the scheduled departure was March 8, 2025, does not change this entitlement.
+
+Your situation falls under the US Department of Transportation (DOT) airline refund regulations, which were already in effect when you purchased your ticket.
+
+## **1. Your legal entitlement: a full refund**
+
+Under **14 CFR § 260.6**, when an airline cancels a flight, passengers are entitled to a refund if they do not accept alternative transportation or a travel credit.
+
+For your DL309 flight (Honolulu–Atlanta), this means:
+
+- **100% of the ticket price:** Delta must refund the amount you paid.
+
+- **Original form of payment:** The refund must generally go back to the original payment method.
+
+- **Taxes and fees:** The refund must include applicable taxes and fees associated with the unused ticket.
+
+- **No travel credit requirement:** Delta cannot force you to accept a voucher or credit instead of a refund.
+
+
+You do not have to prove that Delta was responsible for the circumstances causing the cancellation. The cancellation itself triggers the refund entitlement.
+
+## **2. When should Delta have refunded you?**
+
+The applicable refund deadlines were:
+
+|Original payment method|Refund deadline|
+|---|---|
+|Credit card|7 business days|
+|Cash, check or other payment methods|20 calendar days|
+
+These deadlines apply once the refund becomes due under the regulation. If Delta offered an alternative flight and you did not accept it or travel on it, the refund was still required.
+
+The DOT also requires refunds to be automatic in these circumstances. You should not have needed to submit a conventional refund request first.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&sz=32)
+
+US Department of Transportation+1
+
+## **3. Are you entitled to additional compensation?**
+
+This is an important distinction.
+
+US federal law generally does not require airlines to pay passengers additional cash compensation simply because a flight was cancelled.
+
+Your rights break down as follows:
+
+|Type of compensation|Legal entitlement|
+|---|---|
+|Full ticket refund|Yes|
+|Refund of unused ancillary services|Yes|
+|Additional compensation for inconvenience|Generally no|
+|Compensation for lost vacation time|Generally no|
+|Punitive damages simply because of cancellation|No automatic entitlement|
+|Hotel and meal expenses|Not generally guaranteed by federal law|
+
+Delta may have additional obligations under its Contract of Carriage, particularly if the cancellation was within its control. Those obligations are separate from the statutory refund entitlement.
+
+![](https://www.google.com/s2/favicons?domain=https://www.delta.com&sz=32)
+
+Delta Air Lines+1
+
+## **4. An important issue: the one-year deadline**
+
+There is one complication because your flight dates are now in the past.
+
+Delta's currently published US Contract of Carriage, Rule 22(C), contains a provision stating that refund requests must be received within one year of the original ticket issue date.
+
+![](https://www.google.com/s2/favicons?domain=https://www.delta.com&sz=32)
+
+Delta Air Lines
+
+For your ticket:
+
+- Ticket purchase: February 6, 2025.
+
+- Scheduled flight: March 8, 2025.
+
+- One-year anniversary of purchase: February 6, 2026.
+
+- Today: November 20, 2026.
+
+
+**However, there is an important legal distinction:** the DOT regulation required an automatic refund following the cancellation. It did not make your right dependent on submitting a refund request within Delta's ordinary voluntary-refund process.
+
+Furthermore, Delta's current contract says that the applicable contract is generally the version in effect when the ticket was purchased. We would need to establish the exact February 2025 wording before assessing how Delta might invoke its one-year provision.
+
+I would not assume that you have automatically lost your statutory claim.
+
+## **5. What I recommend doing**
+
+I would pursue this in two stages:
+
+1. Submit a formal written refund demand to Delta, citing 14 CFR § 260.6 and explaining that the airline failed to provide the mandatory automatic refund.
+
+2. If Delta refuses or does not resolve the matter, file a complaint with the US Department of Transportation.
+
+
+Official resources:
+
+- [14 CFR § 260.6 – Federal refund regulation](https://www.law.cornell.edu/cfr/text/14/260.6?utm_source=chatgpt.com)
+
+- [DOT – Airline refund rights](https://www.transportation.gov/individuals/aviation-consumer-protection/refunds?utm_source=chatgpt.com)
+
+- [File a complaint with the DOT](https://www.transportation.gov/airconsumer/file-consumer-complaint?utm_source=chatgpt.com)
+
+
+The DOT complaint process requires airlines to acknowledge complaints within 30 days and provide substantive written responses within 60 days.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&sz=32)
+
+US Department of Transportation+1
+
+## **6. I need three details to assess your claim more precisely**
+
+There are three facts that could materially affect how you pursue this:
+
+**1. How did you pay for the ticket?**
+
+Credit card
+
+Debit card
+
+Cash / other
+
+Airline miles
+
+**2. Where did you purchase the ticket?**
+
+Directly from Delta
+
+Online travel agency (Expedia, etc.)
+
+Travel agent
+
+**3. Did Delta ever refund you or issue a travel credit?**
+
+No refund or credit received
+
+Travel credit only
+
+Partial refund
+
+Full refund
+
+**Additional details (optional)**
+
+**My main concern:** if Delta cancelled your flight, you never travelled, and you received no refund, this is not simply a request for goodwill compensation. It potentially involves Delta's failure to comply with a federal refund obligation.

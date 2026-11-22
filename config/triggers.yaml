@@ -1,0 +1,4 @@
+# Fixed escalation triggers' parameters (agents/system/triggers.py). T26 fixes them on the
+# development set by the prereg's operating point rule.
+window_minutes: 0
+amount_threshold: null

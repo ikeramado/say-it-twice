@@ -1,0 +1,6 @@
+chatbot,question,repeat,date,decision,invented_proposed,invented_human,note
+chatgpt,q1,1,2026-11-20,right,,no,
+chatgpt,q2,1,2026-11-20,wrong,voucher,yes,
+gemini,q1,1,2026-11-20,right,,no,
+meta-ai,q1,1,2026-11-21,wrong,,no,
+meta-ai,q2,1,2026-11-20,none,,no,

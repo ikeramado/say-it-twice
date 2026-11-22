@@ -1,0 +1,83 @@
+# What `make publish DEST=<dir>` (publish/export.py) leaves out of the public copy and how it
+# checks the result. The file set is `git ls-files` at HEAD minus `ban`, minus the `docs/`
+# entries not listed in `docs`. The human edits this file; no code.
+
+# The name of the author and of the committer of the copy's one commit (the human's decision,
+# 2026-11-21); the email comes from the source repository's git config.
+author_name: "Iker Amado"
+
+# Banned, always: a path equal to an entry or under it (the git history is never copied).
+ban:
+  - tasks/
+  - .harnes[s]/
+  - .claude/
+  - STATE.m[d]
+  - FRICTIONS.m[d]
+  - FEATURES.md
+  - CODEMAP.md
+  - AGENTS.md
+  - ROADMAP.md
+  - CRITERIA.md
+  - fetch.list
+  - fetch.lock
+
+# Of docs/, only the paths matching one of these patterns (fnmatch, "*" crosses "/").
+# docs/modules/prereg.md and docs/chatbots/protocol.md are read by tests of the project.
+docs:
+  - docs/results/*
+  - docs/pitch.md
+  - docs/ten-answers.svg
+  - docs/decisions/0002-*
+  - docs/decisions/0004-*
+  - docs/decisions/0008-*
+  - docs/modules/prereg.md
+  - docs/chatbots/protocol.md
+  # Also read by tests of the project (human's decision, 2026-11-21).
+  - docs/chatbots/questions.yaml
+  - docs/run-view.gif
+
+# Text rewritten in the published files: files (fnmatch), pattern (regex), replace.
+rewrite:
+  # Delta's public site-search key, served to every visitor of delta.com (not this project's).
+  - files: ["rules/sources/*.html"]
+    pattern: '\bAIza[0-9A-Za-z_-]{35}\b'
+    replace: "REDACTED"
+
+  # The method's names in published files.
+  - files: [".importlinter"]
+    pattern: '`harness\scheck` runs `lint-imports`'
+    replace: "`lint-imports` checks them"
+  - files: ["docs/decisions/*.md"]
+    pattern: 'Card: `tasks/(T[0-9]+)-[^`]*`'
+    replace: 'Card: \1'
+  # test_readme.py asserts the README does not name the method's files; the names are split
+  # so the copy holds none of them as a whole string (the test means the same).
+  - files: ["tests/test_readme.py"]
+    pattern: '"(STATE|FRICTIONS)\.md"'
+    replace: '("\1" + ".md")'
+  - files: ["tests/test_readme.py"]
+    pattern: '"\.harnes[s]"'
+    replace: '("." + "harness")'
+
+# Tests the copy skips, with the reason (it has one commit and no git tags, and no runs/ or data/).
+skip_tests:
+  - test: tests/test_labels_frozen.py::test_tag_exists_and_no_engine_before_it
+    reason: the public copy has no git tags or history (labels-v1)
+  - test: tests/test_fixed_rule.py::test_the_real_document_holds_both_figures_and_the_ten_decisions_of_test_bnd_001
+    reason: needs runs/, which the public copy does not carry
+  - test: tests/test_site_chatbots.py::test_answer_days_are_not_before_the_protocol_was_committed
+    reason: the public copy has one commit and no history of docs/chatbots/protocol.md
+
+# Secret patterns the copy is scanned for (text files only); a hit fails the export and prints
+# the path and the pattern, never the match. "except" lists paths (fnmatch) a pattern skips.
+scan:
+  - '\bsk-ant-[A-Za-z0-9_-]{20,}'
+  - '\bsk-[A-Za-z0-9]{32,}'
+  - '\bAIza[0-9A-Za-z_-]{35}\b'
+  - '\bghp_[A-Za-z0-9]{36}\b'
+  - '\bgithub_pat_[A-Za-z0-9_]{50,}'
+  - '\bxox[baprs]-[A-Za-z0-9-]{20,}'
+  - '\bAKIA[0-9A-Z]{16}\b'
+  - '-----BEGIN [A-Z ]*PRIVATE KEY-----'
+  - pattern: '(?i)(api[_-]?key|secret|token|password)\s*[:=]\s*["'']?[A-Za-z0-9_-]{24,}'
+    except: ["rules/sources/*"]

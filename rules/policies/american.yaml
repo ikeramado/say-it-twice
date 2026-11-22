@@ -1,0 +1,231 @@
+carrier: AA
+name: American Airlines
+versions:
+- id: AA-2023-10-10
+  carrier_date: '2023-10-10'
+  coverage:
+  - first: '2024-01-01'
+    last: '2024-01-31'
+  source_file: rules/sources/american-contract-2023-10-10.html
+  clauses:
+  - id: AA-2023-10-10-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner fails to operate or delays your arrival more than 4 hours, our sole obligation is to refund the remaining ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2023-10-10.html
+  - id: AA-2023-10-10-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we failed to operate on schedule (a delay to your departure time of over 4 hours) or we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2023-10-10.html
+  - id: AA-2023-10-10-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You cancel within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2023-10-10.html
+- id: AA-2024-04-12
+  carrier_date: '2024-04-12'
+  coverage:
+  - first: '2024-04-14'
+    last: '2024-07-24'
+  source_file: rules/sources/american-contract-2024-04-12.html
+  clauses:
+  - id: AA-2024-04-12-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner fails to operate your flight or your arrival is delayed more than 4 hours, our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2024-04-12.html
+  - id: AA-2024-04-12-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we failed to operate on schedule (a delay to your departure time of over 4 hours) or we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2024-04-12.html
+  - id: AA-2024-04-12-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You cancel within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2024-04-12.html
+- id: AA-2024-07-25
+  carrier_date: '2024-07-25'
+  coverage:
+  - first: '2024-08-10'
+    last: '2024-09-30'
+  source_file: rules/sources/american-contract-2024-07-25.html
+  clauses:
+  - id: AA-2024-07-25-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner fails to operate your flight or your arrival is delayed more than 4 hours, our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2024-07-25.html
+  - id: AA-2024-07-25-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we failed to operate on schedule (a delay to your departure time of over 4 hours) or we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2024-07-25.html
+  - id: AA-2024-07-25-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You cancel within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2024-07-25.html
+- id: AA-2024-10-28
+  carrier_date: '2024-10-28'
+  coverage:
+  - first: '2024-11-13'
+    last: '2025-01-31'
+  source_file: rules/sources/american-contract-2024-10-28.html
+  clauses:
+  - id: AA-2024-10-28-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner cancels your flight or your departure or arrival is delayed for 3 or more hours (domestic) / 4 or more hours (international), our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2024-10-28.html
+  - id: AA-2024-10-28-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2024-10-28.html
+  - id: AA-2024-10-28-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You cancel within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2024-10-28.html
+  - id: AA-2024-10-28-automatic-refund
+    section: automatic
+    topic: refund
+    text: 'We promptly and automatically refund customers for: The ticketed fare, including taxes and fees, if there is a cancellation or significant flight itinerary change, when the customer chooses either not to fly on the changed flight, accept rebooking on an alternative flight, or accept other compensation. A flight number change is considered a cancellation. Eligible flight itinerary changes include: Changes to itineraries for 3 or more hours (domestic) / 4 or more hours (international) Changes in origination / destination airports Downgrades to a lower cabin Increased number of connections'
+    source_file: rules/sources/american-contract-2024-10-28.html
+- id: AA-2025-04-04
+  carrier_date: '2025-04-04'
+  coverage:
+  - first: '2025-06-07'
+    last: '2025-06-26'
+  source_file: rules/sources/american-contract-2025-04-04.html
+  clauses:
+  - id: AA-2025-04-04-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner cancels your flight or your departure or arrival is delayed for 3 or more hours (domestic) / 4 or more hours (international), our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2025-04-04.html
+  - id: AA-2025-04-04-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2025-04-04.html
+  - id: AA-2025-04-04-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You cancel within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2025-04-04.html
+  - id: AA-2025-04-04-automatic-refund
+    section: automatic
+    topic: refund
+    text: 'We promptly and automatically refund customers for: The ticketed fare, including taxes and fees, if there is a cancellation or significant flight itinerary change, when the customer chooses either not to fly on the changed flight, accept rebooking on an alternative flight, or accept other compensation. A flight number change is considered a cancellation. Eligible flight itinerary changes include: Changes to itineraries for 3 or more hours (domestic) / 4 or more hours (international) Changes in origination / destination airports Downgrades to a lower cabin Increased number of connections'
+    source_file: rules/sources/american-contract-2025-04-04.html
+- id: AA-2025-06-27
+  carrier_date: '2025-06-27'
+  coverage:
+  - first: '2025-10-01'
+    last: '2025-10-31'
+  source_file: rules/sources/american-contract-2025-06-27.html
+  clauses:
+  - id: AA-2025-06-27-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner cancels your flight or your departure or arrival is delayed for 3 or more hours (domestic) / 4 or more hours (international), our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2025-06-27.html
+  - id: AA-2025-06-27-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2025-06-27.html
+  - id: AA-2025-06-27-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You or the person who bought your ticket cancels within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2025-06-27.html
+  - id: AA-2025-06-27-automatic-refund
+    section: automatic
+    topic: refund
+    text: 'We promptly and automatically refund customers for: The ticketed fare, including taxes and fees, if there is a cancellation or significant flight itinerary change, when the customer chooses either not to fly on the changed flight, accept rebooking on an alternative flight, or accept other compensation. A flight number change is considered a cancellation. Eligible flight itinerary changes include: Changes to itineraries for 3 or more hours (domestic) / 4 or more hours (international) Changes in origination / destination airports Downgrades to a lower cabin Increased number of connections'
+    source_file: rules/sources/american-contract-2025-06-27.html
+- id: AA-2026-03-02
+  carrier_date: '2026-03-02'
+  coverage:
+  - first: '2026-04-15'
+    last: '2026-04-30'
+  source_file: rules/sources/american-contract-2026-03-02.html
+  clauses:
+  - id: AA-2026-03-02-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner cancels your flight or your departure or arrival is delayed for 3 or more hours (domestic) / 4 or more hours (international), our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2026-03-02.html
+  - id: AA-2026-03-02-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2026-03-02.html
+  - id: AA-2026-03-02-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You or the person who bought your ticket cancels within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2026-03-02.html
+  - id: AA-2026-03-02-automatic-refund
+    section: automatic
+    topic: refund
+    text: 'We promptly and automatically refund customers for: The ticketed fare, including taxes and fees, if there is a cancellation or significant flight itinerary change, when the customer chooses either not to fly on the changed flight, accept rebooking on an alternative flight, or accept other compensation. Eligible flight itinerary changes include: Changes to itineraries for 3 or more hours (domestic) / 4 or more hours (international) Changes in origination / destination airports Downgrades to a lower cabin – refunds are issued at 40% of the ticketed fare on the affected segment Increased number of connections'
+    source_file: rules/sources/american-contract-2026-03-02.html
+- id: AA-2026-05-12
+  carrier_date: '2026-05-12'
+  coverage:
+  - first: '2026-07-10'
+    last: '2026-07-31'
+  source_file: rules/sources/american-contract-2026-05-12.html
+  clauses:
+  - id: AA-2026-05-12-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner cancels your flight or your departure or arrival is delayed for 3 or more hours (domestic) / 4 or more hours (international), our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2026-05-12.html
+  - id: AA-2026-05-12-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2026-05-12.html
+  - id: AA-2026-05-12-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: You or the person who bought your ticket cancels within 24 hours of booking (and booked at least 2 days before departure). We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2026-05-12.html
+  - id: AA-2026-05-12-automatic-refund
+    section: automatic
+    topic: refund
+    text: 'We promptly and automatically refund customers for: The ticketed fare, including taxes and fees, if there is a cancellation or significant flight itinerary change, when the customer chooses either not to fly on the changed flight, accept rebooking on an alternative flight, or accept other compensation. Eligible flight itinerary changes include: Changes to itineraries for 3 or more hours (domestic) / 4 or more hours (international) Changes in origination / destination airports Downgrades to a lower cabin – refunds are issued at 40% of the ticketed fare on the affected segment Increased number of connections'
+    source_file: rules/sources/american-contract-2026-05-12.html
+- id: AA-2026-08-13
+  carrier_date: '2026-08-13'
+  coverage:
+  - first: '2026-08-13'
+    last: null
+  source_file: rules/sources/american-contract-2026-08-13.html
+  clauses:
+  - id: AA-2026-08-13-delay-refund
+    section: delay
+    topic: refund
+    text: If we or our airline partner cancels your flight or your departure or arrival is delayed for 3 or more hours (domestic) / 4 or more hours (international), our sole obligation is to refund the unused ticket value and any optional fees according to our involuntary refunds policy, subject to our policy for rebooking your delayed / canceled flight.
+    source_file: rules/sources/american-contract-2026-08-13.html
+  - id: AA-2026-08-13-involuntary-refund
+    section: involuntary
+    topic: refund
+    text: 'If you are due a refund because we refused to let you fly for reasons other than your violation of this contract, we will refund you: The full amount of the ticket and any extras if travel hasn''t started The value of the unused travel if the ticket is partially used If you were involuntarily denied boarding, we will not charge any refund fees'
+    source_file: rules/sources/american-contract-2026-08-13.html
+  - id: AA-2026-08-13-non-refundable-refund
+    section: non-refundable
+    topic: refund
+    text: 'We will refund a non-refundable ticket (or the value of the unused segment of your trip) to the original form of payment if: We cancel your flight We make a schedule change that results in a change of more than 4 hours to your departure time'
+    source_file: rules/sources/american-contract-2026-08-13.html
+  - id: AA-2026-08-13-automatic-refund
+    section: automatic
+    topic: refund
+    text: 'We promptly and automatically refund customers for: The ticketed fare, including taxes and fees, if there is a cancellation or significant flight itinerary change, when the customer chooses either not to fly on the changed flight, accept rebooking on an alternative flight, or accept other compensation. Eligible flight itinerary changes include: Changes to itineraries for 3 or more hours (domestic) / 4 or more hours (international) Changes in origination / destination airports Downgrades to a lower cabin Increased number of connections'
+    source_file: rules/sources/american-contract-2026-08-13.html

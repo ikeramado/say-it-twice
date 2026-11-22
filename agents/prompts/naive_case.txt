@@ -1,0 +1,10 @@
+Case $id
+
+Flight: $carrier $flight_number on $flight_date from $origin
+Flight record: cancelled: $cancelled; arrival delay: $arrival_delay
+
+Passenger facts:
+$facts
+
+Customer message:
+$message

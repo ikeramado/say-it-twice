@@ -1,0 +1,82 @@
+# The layer rules of docs/plan.md (Architecture, "Layer rules") as import contracts
+# (ADR-0003, ADR-0004). `lint-imports` checks them. scrape/ is tooling outside the
+# product and is not a root package.
+[importlinter]
+root_packages =
+    agents
+    cases
+    eval
+    ingest
+    labeler_rules
+    labeling
+    llm
+    report
+    rules
+include_external_packages = True
+
+[importlinter:contract:1]
+name = Agents, gate and runner never see evaluation
+type = forbidden
+source_modules =
+    agents
+    llm
+forbidden_modules =
+    eval
+    labeler_rules
+    labeling
+    report
+
+[importlinter:contract:2]
+name = Only the access point reads rules and flights
+type = forbidden
+source_modules =
+    agents
+forbidden_modules =
+    rules
+    ingest
+ignore_imports =
+    agents.system.tools -> rules.*
+
+[importlinter:contract:3]
+name = The gate stands alone
+type = forbidden
+source_modules =
+    llm
+forbidden_modules =
+    agents
+    cases
+    eval
+    ingest
+    labeling
+    report
+    rules
+    runner
+
+[importlinter:contract:4]
+name = Ingest and rules are the base
+type = forbidden
+source_modules =
+    ingest
+    rules
+forbidden_modules =
+    agents
+    cases
+    eval
+    labeling
+    llm
+    report
+    runner
+
+[importlinter:contract:5]
+name = Nothing imports the report
+type = forbidden
+source_modules =
+    agents
+    cases
+    eval
+    ingest
+    labeling
+    llm
+    rules
+forbidden_modules =
+    report

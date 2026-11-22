@@ -1,0 +1,1 @@
+[{"id": "opaque", "tool_calls": [{"tool": "get_flight", "args": ["AA", "1", "2024-05-20", "CLT"], "found": true}], "facts": {}, "rule_version": null, "engine": {"decision": "escalate", "clause": "no_flight", "rule_version": null, "policy_version": null}, "triggers": []}]

@@ -1,0 +1,105 @@
+versions:
+- id: v0
+  first_day: '2024-01-01'
+  last_day: '2024-05-15'
+  follows: null
+  source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  source_files:
+  - rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  clauses:
+  - id: v0-fr-policy-refunds
+    section: fr
+    topic: policy-refunds
+    text: codify its longstanding policy to require airlines and ticket agents to provide prompt refunds to consumers when airlines cancel or make a significant change to flight itineraries and consumers do not accept alternative transportation offered by airlines or ticket agents.
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+- id: v1
+  first_day: '2024-05-16'
+  last_day: '2024-10-27'
+  follows: null
+  source_file: rules/sources/v1-plaw-118-63-faa-reauthorization-act.pdf
+  source_files:
+  - rules/sources/v1-plaw-118-63-faa-reauthorization-act.pdf
+  - rules/sources/v2-fr-2024-17602-faa-reauthorization-amendment.pdf
+  clauses:
+  - id: v1-42305-refund
+    section: '42305'
+    topic: refund
+    text: In the case of a passenger that holds a nonrefundable ticket on a scheduled flight to, from, or within the United States, an air carrier or a foreign air carrier shall, upon request as set forth in subsection (f), provide a full refund, including any taxes and ancillary fees, for the fare such carrier collected for any cancelled flight or significantly delayed or changed flight where the passenger chooses not to—
+    source_file: rules/sources/v1-plaw-118-63-faa-reauthorization-act.pdf
+  - id: v1-42305-timing
+    section: '42305'
+    topic: timing
+    text: Any refund required under subsection (a) shall be issued by the air carrier or foreign air carrier— ‘‘(1) in the case of a ticket purchased with a credit card, not later than 7 business days after the earliest date the refund was requested as set forth in subsection (f); or ‘‘(2) in the case of a ticket purchased with cash or another form of payment, not later than 20 days after the earliest date the refund was requested as set forth in subsection (f).
+    source_file: rules/sources/v1-plaw-118-63-faa-reauthorization-act.pdf
+  - id: v1-42305-delay-definition
+    section: '42305'
+    topic: delay-definition
+    text: ‘significantly delayed or changed flight’ includes, at a minimum, a flight where the passenger arrives at a destination airport— ‘‘(1) in the case of a domestic flight, 3 or more hours after the original scheduled arrival time; and ‘‘(2) in the case of an international flight, 6 or more hours after the original scheduled arrival time.
+    source_file: rules/sources/v1-plaw-118-63-faa-reauthorization-act.pdf
+- id: v2
+  first_day: '2024-10-28'
+  last_day: '2025-12-04'
+  follows: null
+  source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  source_files:
+  - rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  - rules/sources/v2-fr-2024-17602-faa-reauthorization-amendment.pdf
+  - rules/sources/v2-ecfr-part-260-versions.json
+  clauses:
+  - id: v2-260.2-cancelled
+    section: '260.2'
+    topic: cancelled
+    text: Cancelled flight or cancellation means a flight with a specific flight number scheduled to be operated between a specific origin-destination city pair that was published in a carrier’s Computer Reservation System at the time of the ticket sale but was not operated by the carrier.
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  - id: v2-260.2-delay
+    section: '260.2'
+    topic: delay
+    text: 'Significant change of flight itinerary or significantly changed flight means a change to a flight itinerary consisting of covered flight(s) made by a U.S. or foreign carrier where: (A) The consumer is scheduled to depart from the origination airport three hours or more for domestic itineraries and six hours or more for international itineraries earlier than the original scheduled departure time; (B) The consumer is scheduled to arrive at the destination airport three hours or more for domestic itineraries or six hours or more for international itineraries later than the original scheduled arrival time;'
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  - id: v2-260.2-connections-downgrade
+    section: '260.2'
+    topic: connections-downgrade
+    text: (D) The consumer is scheduled to travel on an itinerary with more connection points than that of the original itinerary; (E) The consumer is downgraded to a lower class of service;
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  - id: v2-260.2-airport-change
+    section: '260.2'
+    topic: airport-change
+    text: (C) The consumer is scheduled to depart from a different origination airport or arrive at a different destination airport;
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  - id: v2-260.2-disability
+    section: '260.2'
+    topic: disability
+    text: (F) The consumer with a disability is scheduled to travel through one or more connecting airports that are different from the original itinerary; or (G) The consumer with a disability is scheduled to travel on substitute aircraft on which one or more accessibility features needed by the passenger are unavailable.
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+  - id: v2-fr-compliance-date
+    section: fr
+    topic: compliance-date
+    text: regulated entities will have six months from the date of publication of the final rule, or October 28, 2024, to implement the relevant requirements.
+    source_file: rules/sources/v2-fr-2024-07177-refunds-final-rule.pdf
+- id: v3
+  first_day: '2025-12-05'
+  last_day: '2026-06-30'
+  follows: v2
+  source_file: rules/sources/v3-fr-2025-22140-renumbered-flights-pause.pdf
+  source_files:
+  - rules/sources/v3-fr-2025-22140-renumbered-flights-pause.pdf
+  clauses:
+  - id: v3-fr-pause-renumbered
+    section: fr
+    topic: pause-renumbered
+    text: As of December 5, 2025, the Department is pausing until June 30, 2026 the enforcement of airline refunds requirements regarding cancelled flights under 14 CFR parts 260 and 399 for flights that are operated under a different flight number than was held out to consumers at the time of ticket purchases so long as the flights impose no significant change or delay to consumers’ itineraries.
+    source_file: rules/sources/v3-fr-2025-22140-renumbered-flights-pause.pdf
+- id: v4
+  first_day: '2026-07-07'
+  last_day: null
+  follows: v2
+  source_file: rules/sources/v4-fr-2026-13675-renumbered-flights-pause-extension.pdf
+  source_files:
+  - rules/sources/v4-fr-2026-13675-renumbered-flights-pause-extension.pdf
+  - rules/sources/v4-fr-search-dot-refunds-since-2024.json
+  clauses:
+  - id: v4-fr-pause-extension
+    section: fr
+    topic: pause-extension
+    text: As of July 7, 2026, the Department is extending the pause on the enforcement of airline refunds requirements regarding cancelled flights under 14 CFR parts 260 and 399 for flights that are merely renumbered. This enforcement discretion is extended for 1-year from the date of this publication, expiring on July 7, 2027.
+    source_file: rules/sources/v4-fr-2026-13675-renumbered-flights-pause-extension.pdf

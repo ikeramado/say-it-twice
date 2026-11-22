@@ -1,0 +1,4 @@
+carrier,flight_number,date,origin,destination,scheduled_departure,actual_departure,scheduled_arrival,actual_arrival,cancelled,diverted,cancellation_code,departure_delay,arrival_delay
+DL,31,2024-07-19,ATL,DFW,2007,,2125,,1,0,A,,
+DL,32,2024-07-19,DFW,ATL,1533,1830,1850,2203,0,0,,177,193
+DL,300,2024-07-20,ATL,BOS,1630,1829,1917,2047,0,0,,119,90

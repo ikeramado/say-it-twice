@@ -1,0 +1,6 @@
+Small Entity Compliance Guide
+
+If an airline cancels a passenger's flight and the passenger does not accept the alternative offered, the airline must provide a refund.
+If a flight is delayed one hour, the airline is not required to provide a refund.
+
+A schedule change may happen for many reasons.

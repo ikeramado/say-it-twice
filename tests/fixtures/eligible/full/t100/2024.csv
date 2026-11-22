@@ -1,0 +1,4 @@
+carrier,year,month,origin,destination,passengers,departures
+AA,2024,11,ORD,DFW,300,2
+DL,2024,10,JFK,ATL,1000,10
+DL,2024,11,ATL,JFK,500,5

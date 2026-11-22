@@ -1,0 +1,2 @@
+site/** -diff linguist-generated
+rules/sources/** linguist-vendored

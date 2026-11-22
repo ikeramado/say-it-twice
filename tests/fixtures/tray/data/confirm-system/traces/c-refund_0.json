@@ -1,0 +1,1 @@
+[{"id": "opaque", "tool_calls": [{"tool": "get_flight", "args": ["AA", "1", "2024-05-20", "CLT"], "found": true}], "facts": {"cancelled": true, "arrival_delay_min": 0}, "rule_version": "v1", "engine": {"decision": "refund", "clause": "cancelled", "rule_version": "v1", "policy_version": "AA-1"}, "triggers": ["near_threshold"]}]

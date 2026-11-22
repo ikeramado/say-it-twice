@@ -1,0 +1,66 @@
+On those facts, the short answer is: **by accepting the alternative flight, you gave up the one clear federal entitlement that a cancellation creates - a refund. US law does not give you EU261-style cash compensation for the cancellation itself.**
+
+This is general information, not legal advice for your specific booking.
+
+### 1. The refund right - and why acceptance matters
+
+For a flight to, from, or within the US, DOT's long-standing position, later codified in the FAA Reauthorization Act of 2024 at 49 U.S.C. § 42305, is that an airline must provide a full refund - including taxes and ancillary fees - for a cancelled flight **where the passenger does not accept alternative transportation**.
+
+The DOT final rule summarized it the same way: automatic refunds are required when the carrier cancels and the consumer "is not offered or rejects alternative transportation and travel credits, vouchers, or other compensation".
+
+That creates an either/or choice:
+
+- **Reject the rebooking / decide not to travel:** full refund to original form of payment.
+- **Accept the rebooking and travel:** you have been transported under the contract, so you are generally not entitled to a refund for that disrupted flight.
+
+You describe the second branch. Acceptance therefore normally extinguishes the refund claim for the AA9 fare itself.
+
+### 2. Timing point for your dates
+
+Your ticket was bought 3 May 2024 for travel 2 June 2024.
+
+The much-publicised **automatic** refund rule in 14 C.F.R. Part 260 did not take full effect until **28 October 2024**. That timing does not change the outcome here, because:
+
+1. The pre-October DOT refund policy already gave a refund if you rejected the alternative, and
+2. The October change was mainly about making refunds **automatic** and prompt, not about creating a refund right for passengers who accepted and flew on a rebooking.
+
+Refunds under the later rule must be issued within 7 business days for credit-card purchases and 20 days for other payment methods - again, only where a refund is owed.
+
+### 3. No federal compensation for delay / cancellation itself
+
+Unlike EU261, US law sets **no fixed cash compensation** for a cancellation or delay itself. US rules "mandate automatic refunds for major schedule changes but set no fixed delay compensation amount", and "U.S. law does not require compensation for the disruption itself".
+
+EU261's €250-€600 scheme does not apply to a purely domestic US flight like ABQ-DFW.
+
+There is also no federal right to hotel/meals as such. Those come, if at all, from the airline's own commitments.
+
+### 4. What American may still have owed under its own plan
+
+American's DOT customer-service commitments distinguish **controllable** cancellations - e.g. maintenance, crew - from uncontrollable ones like weather.
+
+For a controllable cancellation, American commits to:
+
+- Rebooking on American at no extra cost
+- Rebooking on a partner airline at no extra cost
+- A meal or meal voucher for waits of 3 hours or more
+- A hotel for overnight delays or cancellations
+- Ground transportation to and from the hotel
+
+So if your cancellation was controllable, and you had a 3+ hour wait or an overnight stay, you could still claim the meal/hotel/transport benefit even though you accepted rebooking. If it was weather or another uncontrollable cause, American would not owe those amenities under that plan, although it still had to rebook you at no extra cost.
+
+### 5. Narrow exceptions that could still leave money owed
+
+Accepting the alternative does not waive _everything_:
+
+- **Downgrade:** if the alternative flight put you in a lower class of service than you paid for, you would be entitled to a refund of the fare difference.
+- **Unused ancillary services:** if you paid for a seat, bag, Wi-Fi or other ancillary service that was not provided on the alternative flight, that fee is refundable.
+- **Extra charges:** if American charged you extra to rebook, that would be contrary to its rebooking commitment. The rebooking itself should have been at no additional cost.
+
+### Bottom line for AA9 on 2 June 2024
+
+- **Fare refund:** No, not if you accepted and flew on the offered alternative.
+- **Cash compensation for inconvenience:** No, US law does not provide it for a domestic cancellation.
+- **Rebooking:** Yes, at no extra cost - which you received.
+- **Meals / hotel / transport:** Only if the cancellation was within American's control and you met the 3-hour / overnight thresholds in its customer-service plan.
+
+If you want to pursue the meal/hotel point, the key fact to establish from American is the recorded cancellation reason: controllable vs. weather/ ATC.

@@ -1,0 +1,18 @@
+author_name: "Config Author"
+ban: [tasks/, "STATE.m[d]"]
+docs: [docs/pitch.md]
+rewrite:
+  - files: ["rules/sources/*.html"]
+    pattern: '\bAIza[0-9A-Za-z_-]{35}\b'
+    replace: "REDACTED"
+  - files: ["notes.txt"]
+    pattern: 'harness\scheck runs'
+    replace: "the linter runs"
+skip_tests:
+  - test: test_skipme.py::test_a
+    reason: needs what the copy leaves out
+scan:
+  - '\bAIza[0-9A-Za-z_-]{35}\b'
+  - '\bghp_[A-Za-z0-9]{36}\b'
+  - pattern: '(?i)(api[_-]?key|secret|token|password)\s*[:=]\s*["'']?[A-Za-z0-9_-]{24,}'
+    except: ["rules/sources/*"]

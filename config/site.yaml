@@ -1,0 +1,151 @@
+# Text and links of the static site (`make site`, report/site/). The human edits this file; no code.
+contact_url: "https://www.upwork.com/freelancers/~018a26d02cfcd93639"
+contact_label: "Hire me on Upwork"
+audit:
+  title: "Agent audit"
+  text: "I run your agent on cases like yours, ten times each, and report consistency, wrong decisions, escalations and cost per decision. Write to me for a quote."
+close_question: "Does your agent give the same answer twice? Is it the right one?"
+offer: "I check whether your agent answers the same way every time, and whether that answer follows your rules."
+
+# The freshness label, the footer line of the index (C15). Always starts with "Flight data through".
+freshness: "Flight data through {month} (BTS), last loaded on {loaded}, {days} before this build."
+freshness_missing: "Flight data freshness is not available in this build."
+
+# The story page (index.html, report/site/story.py). Figures are computed, never typed here.
+story:
+  first_case: test-ren-002
+  second_case: test-bnd-001
+  airlines: {AA: American Airlines, DL: Delta}
+  cities: {CID: Cedar Rapids, ATL: Atlanta}
+statute_clause: v1-42305-refund
+statute_cite: "49 U.S.C. § 42305(a)"
+# The saved clause ends at "chooses not to-" (rules/versions.yaml); `statute_continuation` is its
+# subsection (1) as ADR-0008 quotes it from the saved statute. Each highlight is a substring of
+# the clause text followed by the continuation.
+statute_continuation: " (1) fly on the significantly delayed or changed flight or accept rebooking on an alternative flight;"
+statute_highlight:
+  - "where the passenger chooses not to"
+  - "fly on the significantly delayed or changed flight"
+evidence:
+  - {label: "All 130 cases", sub: "every answer, and why it was given", href: cases.html}
+  - {label: "Rule versions", sub: "which rule applied on which date", href: versions.html}
+  - {label: "Try to break it", sub: "customers who push back", href: break.html}
+  - {label: "Where it fails", sub: "each error and its cause", href: fails.html}
+  - {label: "Full audit report", sub: "every figure with its interval", href: audit.html}
+  - {label: "Method and limits", sub: "what we measured and what we did not", href: method.html}
+
+# Block 5 of the story: what a wrong answer costs (text approved by the human, 2026-11-21).
+costs_intro: "The same failure shows up with your return policy, your prices or your booking rules."
+costs:
+  - text: "In 2024 a tribunal made Air Canada honour a refund its website chatbot had promised. The airline argued the chatbot was responsible for its own words. It lost."
+    source_label: "Moffatt v. Air Canada, 2024 BCCRT 149"
+    source_url: "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html"
+  - text: "$140 million civil penalty on Southwest Airlines, 2023, the largest the US Department of Transportation had issued for consumer protection."
+    source_label: "DOT order on Southwest Airlines, 11 December 2023"
+    source_url: "https://www.transportation.gov/airconsumer/southwest-order-2023-12-11"
+  - text: "$7.25 million in penalties on six airlines for slow refunds, on top of more than $600 million they were made to pay back."
+    source_label: "DOT enforcement orders, November 2022"
+    source_url: "https://www.transportation.gov/airconsumer/enforcement-orders"
+
+moffatt: >-
+  In Moffatt v. Air Canada (2024 BCCRT 149) the airline was held liable for what its
+  chatbot told a customer.
+moffatt_url: "https://www.canlii.org/en/bc/bccrt/doc/2024/2024bccrt149/2024bccrt149.html"
+dot_refund_url: "https://www.transportation.gov/airconsumer/refunds"
+
+business:
+  intro: "The same pattern shows up wherever an agent states a rule to a customer."
+  items:
+    - title: "Price quotes"
+      text: "An agent quotes from last season's price list, or gives a different price when the same question is asked twice."
+    - title: "Returns"
+      text: "An agent applies today's return window to a purchase made before the policy changed, or grants a return the policy does not allow."
+    - title: "Warranty"
+      text: "An agent promises a repair or a replacement that the warranty terms do not cover, because the customer asked firmly."
+    - title: "Claims"
+      text: "An agent decides a claim that a person should have reviewed, or decides two identical claims in two ways."
+
+# Each fear reads one number per agent from runs/confirm/report.json: `path` is a dotted key
+# path (a fear lists one or more metrics), `{agent}` stands for the agent name. kind is a report.confirm.fmt kind.
+fears:
+  - fear: "It never invents packages or prices"
+    what_h_does: "The agent does not decide; a rule engine in code does. The agent gathers facts with tools and explains, citing the rule."
+    metrics:
+      - label: "Wrong decisions per 100 runs"
+        path: "primary.H2.wrong_decisions_per_100.{agent}"
+        kind: num
+  - fear: "Inconsistency"
+    what_h_does: "Every case is run ten times per agent."
+    metrics:
+      - label: "Cases where all ten decisions agree"
+        path: "primary.H1.values.{agent}"
+        kind: pct
+  - fear: "When to use AI and when plain logic"
+    what_h_does: "The AI gathers and explains; logic decides."
+    metrics:
+      - label: "Correct decisions"
+        gap: true
+        path: "secondary.{agent}.correct_share"
+        kind: pct
+  - fear: "Hand over to a person when needed"
+    what_h_does: "Fixed triggers: missing facts, a boundary case, an out-of-scope request. Escalating everything is also a failure."
+    metrics:
+      - label: "Unnecessary escalations per 100 runs"
+        path: "secondary.{agent}.unnecessary_escalations_per_100"
+        kind: num
+      - label: "Needed escalations per 100 runs"
+        path: "secondary.{agent}.needed_escalations_per_100"
+        kind: num
+  - fear: "Applying the wrong rule for the date"
+    what_h_does: "The rule engine is versioned by date."
+    metrics:
+      - label: "Decisions citing a version not in force, per 100 runs"
+        path: "secondary.{agent}.version_errors_per_100"
+        kind: num
+  - fear: "The customer talks it out of the rules"
+    what_h_does: "Adversarial messages are part of the cases; the target is zero."
+    metrics:
+      - label: "Adversarial change share, per run"
+        path: "primary.H3.values.{agent}"
+        kind: pct
+  - fear: "One client's data used with another client"
+    what_h_does: "Two airlines with their own policies; the tools are scoped to the customer's airline."
+    metrics:
+      - label: "Uses of the other airline's policy per 100 runs"
+        path: "secondary.{agent}.policy_leaks_per_100"
+        kind: num
+
+listings_limitations: >-
+  Of the pattern-3 solution, this piece does not cover consent. Of the evidence buyers ask
+  for, it does not give an agent deployed with real users: it is a public piece with real
+  flights and constructed cases.
+
+limitations:
+  - "This page evaluates agents against published rule text. It is not legal advice."
+  - "The study model rejects a non-default temperature (and top_p, top_k) with a 400, so no analysis at a non-default temperature is run; consistency is measured at the provider's default temperature, which is how agents run."
+  - "The amount trigger is inactive (no case has an amount), and the boundary window is 0 minutes, so the boundary trigger fires only on a delay exactly at the threshold that decides the case."
+constructed: >-
+  What is constructed: the passenger facts (such as a purchase date) and the customer
+  messages are made up to stand for what a client would supply from its own system, and are
+  labeled as constructed in every case that uses them. The flights are real (BTS data).
+
+chatbots_title: "Popular chatbots, asked by hand"
+chatbots_label: "exploratory, small sample, not part of the registered study"
+chatbots_text: "Each chatbot was asked the same four questions once, as written in the protocol. A person marked each answer as right or wrong and whether it invented an entitlement or amount the rule in force does not give. One answer per chatbot is quoted in full."
+chatbots_protocol_label: "The protocol, as asked"
+corrected:
+  label: "Corrected reading of the delay rule (ADR-0008), decided after the results"
+  unchanged: "H1 and H3: unchanged under the corrected reading."
+  lesson: "Rules in code made the agent consistent and hard to talk out of the rules, and it is right only when the rule is written right; the delay rule was misread, and a popular chatbot's answer caught it."
+  lesson_link: "See the chatbots' answers."
+  no_runs: "The corrected figures need the runs; this build had none."
+
+# The audit page's own text (T62).
+audit_files:
+  report_label: "The audit report"
+  report_text: "Every figure of the confirmatory analysis with its interval, as the analysis wrote it."
+  report_missing: "The audit report needs the runs; this build had none, so it is not linked here."
+  tray_label: "The escalation tray"
+  tray_text: "The cases the system sent to a person, as the operator sees them (read-only view)."
+  gif_alt: "A recording of the run view of one case"
+  gif_text: "The run view of one case, recorded."

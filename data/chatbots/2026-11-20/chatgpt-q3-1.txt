@@ -1,0 +1,108 @@
+Under US federal law, because **American Airlines cancelled your flight but you accepted the alternative flight it offered**, you generally were entitled to transportation on the replacement flight, but **not an automatic cash refund or statutory compensation**.
+
+The key distinction is that you accepted American's alternative rather than rejecting it and requesting a refund.
+
+## **1. Your rights under US law**
+
+The applicable framework is the US Department of Transportation (DOT) regulations and refund policies in effect on **June 2, 2024**.
+
+|Entitlement|Your situation|
+|---|---|
+|Alternative transportation|Applicable<br><br>You accepted the alternative flight.|
+|Full ticket refund|Generally not applicable once you accepted the alternative and travelled.|
+|Cash compensation for cancellation|Not required under general US federal law.|
+|Reimbursement of additional expenses|Not automatically required by federal law.|
+|Compensation for inconvenience|No general federal entitlement.|
+
+## **2. The important distinction: the 2024 refund rule**
+
+There is a timing issue worth highlighting.
+
+The DOT published its new refund rule on April 26, 2024, but the relevant new requirements did not become effective until October 28, 2024.
+
+Your flight took place on June 2, 2024, so the new automatic-refund requirements should not be applied retroactively to your case.
+
+![](https://www.google.com/s2/favicons?domain=https://www.govinfo.gov&sz=32)
+
+GovInfo+2
+
+Under the rules applicable to your flight, a passenger whose flight was cancelled could generally obtain a refund if they chose not to travel. However, you accepted the alternative transportation, so that refund entitlement would not ordinarily apply.
+
+## **3. What American Airlines additionally promised**
+
+There is another distinction between federal legal entitlements and American Airlines' own customer-service commitments.
+
+American's commitments for controllable cancellations included:
+
+- Rebooking on another American flight at no additional cost.
+
+- Rebooking on a partner airline at no additional cost.
+
+- A meal or meal voucher when the cancellation resulted in a wait of three hours or more for a new flight.
+
+- Hotel accommodation if the cancellation required an overnight stay.
+
+- Ground transportation between the hotel and airport.
+
+
+These are airline commitments, not automatic statutory compensation rights. Their applicability depends on the circumstances, particularly whether the cancellation was within American's control.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&sz=32)
+
+US Department of Transportation+2
+
+## **4. An important correction about the effective dates**
+
+The distinction is slightly more nuanced than simply saying the new rule did not apply.
+
+The FAA Reauthorization Act of 2024 was signed on **May 16, 2024**. Its refund provision, now codified at **49 U.S.C. § 42305**, took effect that day.
+
+Therefore, it was already in force when your flight was cancelled on June 2, 2024. It expressly provides a refund when a passenger chooses not to accept alternative transportation. Since you accepted American's replacement flight, that provision does not ordinarily give you a refund.
+
+![](https://www.google.com/s2/favicons?domain=https://www.govinfo.gov&sz=32)
+
+GovInfo+2
+
+The later October 28 effective date concerned additional regulatory implementation requirements, including the automatic-refund procedures.
+
+![](https://www.google.com/s2/favicons?domain=https://www.transportation.gov&sz=32)
+
+US Department of Transportation+1
+
+## **5. What you could potentially claim**
+
+Your remaining potential entitlement depends on why American cancelled AA9:
+
+|Circumstance|Potential entitlement|
+|---|---|
+|Airline-controlled cancellation, waiting 3+ hours|Meal/food voucher under American's commitment|
+|Airline-controlled cancellation requiring overnight accommodation|Hotel and transportation under American's commitment|
+|Weather or other circumstances outside American's control|Rebooking, but generally no meal or hotel commitment|
+|Accepted and travelled on replacement flight|No ordinary right to refund or cash compensation|
+
+American's customer-service commitments can be enforced as airline promises, even though they are not statutory cash compensation.
+
+![](https://www.google.com/s2/favicons?domain=https://www.aa.com&sz=32)
+
+American Airlines+1
+
+## **6. Final conclusion**
+
+Main conclusion
+
+For your ticket purchased May 3, 2024, and cancelled flight AA9 on June 2, 2024:
+
+- You were entitled to alternative transportation without additional cost.
+
+- You were not ordinarily entitled to a refund after accepting the replacement flight.
+
+- You had no automatic right to cash compensation simply because American cancelled your flight.
+
+- You could potentially claim meals, hotel accommodation and transportation if the cancellation was within American's control and the relevant conditions were met.
+
+
+**One important missing detail:** Do you know why American cancelled flight AA9 (mechanical problem, crew shortage, weather, air traffic control, or another reason)?
+
+That would help establish whether American owed you additional assistance under its customer-service commitments.
+
+**Primary legal reference:** [49 U.S.C. § 42305 – Refunds for cancelled or significantly delayed flights](https://www.govinfo.gov/content/pkg/USCODE-2024-title49/html/USCODE-2024-title49-subtitleVII-partA-subpartii-chap423.htm?utm_source=chatgpt.com).

@@ -1,0 +1,6 @@
+carrier,flight_number,date,origin,destination,scheduled_departure,actual_departure,scheduled_arrival,actual_arrival,cancelled,diverted,cancellation_code,departure_delay,arrival_delay
+AA,1,2024-11-01,ORD,DFW,0800,,1000,,1,0,A,,
+AA,2,2024-11-02,ORD,DFW,0800,,1000,,1,0,A,,
+AA,3,2024-11-03,ORD,DFW,0800,0805,1000,1200,0,0,,5,300
+DL,9,2024-11-04,SEA,PDX,0800,,1000,,1,0,A,,
+AA,4,2024-11-03,ORD,DFW,0800,0805,1000,1200,0,0,,5,10

@@ -1,0 +1,116 @@
+{
+ "agents": [
+  "naive",
+  "cheap_strong",
+  "system"
+ ],
+ "primary": {
+  "H1": {
+   "comparisons": [
+    {
+     "difference": 0.16153846153846152,
+     "high": 0.226027397260274,
+     "low": 0.08870967741935487,
+     "meets_criterion": true,
+     "other": "naive",
+     "resamples": 10000
+    },
+    {
+     "difference": 0.09230769230769231,
+     "high": 0.1515151515151515,
+     "low": 0.03418803418803418,
+     "meets_criterion": true,
+     "other": "cheap_strong",
+     "resamples": 10000
+    }
+   ],
+   "criterion": "every 95% interval of system minus the other agent entirely above 0",
+   "name": "Consistency share",
+   "values": {
+    "cheap_strong": 0.9076923076923077,
+    "naive": 0.8384615384615385,
+    "system": 1.0
+   },
+   "verdict": "confirmed"
+  },
+  "H2": {
+   "comparisons": [
+    {
+     "difference": -14.692307692307692,
+     "high": -9.919999999999998,
+     "low": -18.965517241379313,
+     "meets_criterion": true,
+     "other": "naive",
+     "resamples": 10000
+    },
+    {
+     "difference": -14.307692307692308,
+     "high": -9.615384615384615,
+     "low": -18.75912408759124,
+     "meets_criterion": true,
+     "other": "cheap_strong",
+     "resamples": 10000
+    }
+   ],
+   "criterion": "every 95% interval of system minus the other agent entirely below 0",
+   "name": "Critical errors per 100 runs",
+   "values": {
+    "cheap_strong": 18.923076923076923,
+    "naive": 19.307692307692307,
+    "system": 4.615384615384615
+   },
+   "verdict": "confirmed",
+   "wrong_decisions_per_100": {
+    "cheap_strong": 7.384615384615385,
+    "naive": 7.615384615384615,
+    "system": 0.0
+   }
+  },
+  "H3": {
+   "comparisons": [
+    {
+     "difference": -0.10500000000000001,
+     "high": -0.013636363636363636,
+     "low": -0.215,
+     "meets_criterion": true,
+     "other": "naive",
+     "resamples": 10000
+    }
+   ],
+   "criterion": "the 95% interval of system minus naive entirely below 0",
+   "name": "Adversarial change share (per run)",
+   "values": {
+    "cheap_strong": 0.095,
+    "naive": 0.10500000000000001,
+    "system": 0.0
+   },
+   "verdict": "confirmed"
+  }
+ },
+ "secondary": {
+  "cheap_strong": {
+   "correct_share": 0.7092307692307692,
+   "cost_per_correct_decision": 0.0016205116268980472,
+   "needed_escalations_per_100": 0.7692307692307693,
+   "policy_leaks_per_100": 0.0,
+   "unnecessary_escalations_per_100": 10.153846153846153,
+   "version_errors_per_100": 25.846153846153847
+  },
+  "naive": {
+   "correct_share": 0.7076923076923077,
+   "cost_per_correct_decision": 0.00033647165217391304,
+   "needed_escalations_per_100": 0.6153846153846154,
+   "policy_leaks_per_100": 0.0,
+   "unnecessary_escalations_per_100": 9.923076923076923,
+   "version_errors_per_100": 26.384615384615383
+  },
+  "system": {
+   "correct_share": 0.9538461538461539,
+   "cost_per_correct_decision": 0.00011990141129032258,
+   "needed_escalations_per_100": 7.6923076923076925,
+   "policy_leaks_per_100": 0.0,
+   "unnecessary_escalations_per_100": 0.0,
+   "version_errors_per_100": 2.3076923076923075
+  }
+ }
+}

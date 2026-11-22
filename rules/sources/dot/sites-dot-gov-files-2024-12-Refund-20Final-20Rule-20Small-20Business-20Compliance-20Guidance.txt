@@ -1,0 +1,333 @@
+                                  UNITED STATES OF AMERICA
+                              DEPARTMENT OF TRANSPORTATION
+                          OFFICE OF AVIATION CONSUMER PROTECTION
+                                       WASHINGTON, DC
+                            _________________________________________
+
+                                                 Issued December 2024
+
+                                      Small Entity Compliance Guide
+                          Final Rule on Refunds and Other Consumer Protections
+
+     [Note: Pursuant to Section 212 of the Small Business Regulatory Enforcement Fairness Act of 1996
+     (“SBREFA”), Pub. L. 104-121, the Department of Transportation’s Office of Aviation Consumer
+     Protection (OACP) is issuing this Small Entity Compliance Guide to aid regulated entities in complying
+     with the two final rules on Refunds and Other Consumer Protections (“Refund Rule”) published on
+     April 26 and August 12, 2024.1 The material contained in this document does not constitute a
+     regulation. To the extent this document indicates any differences from the final rule as published in
+     the Federal Register, the final rule prevails.]
+
+    I.        Overview
+
+1. What are the major provisions of the Refund Rule?
+
+         (1) Requires airlines to provide automatic refunds of airfare and ticket agent to provide, upon request,
+             refunds of airfare when they are the merchant of record (name appears on, e.g., consumer’s credit card
+             statement) if airlines cancel or make a significant change to consumers’ flights and consumers do not
+             accept alternative transportation or travel credits offered.
+         (2) Defines for the first time a “significant change” and “flight cancellation” that would entitle consumers
+             to a refund.
+                   • Significant change to a flight includes:
+                          o Changes that result in early departure or late arrival times by more than 3 hours on a
+                               domestic flight and more than 6 hours on an international flight;
+                          o Changes to the departure or arrival airport;
+                          o Changes that increase the number of connections;
+                          o Changes that cause passengers to be downgraded to a lower class of service;
+                          o For persons with a disability:
+                                   ▪ Changes to the connecting airport; or
+                                   ▪ Changes to type of aircraft flown if less accessible or accommodating to a
+                                      person with a disability.
+                   • Flight cancellation means a flight that was published in a carrier’s Computer Reservation
+                       System at the time of the ticket sale but was not operated by the carrier.
+         (3) Requires airlines to provide automatic refunds of checked bag fees if a checked bag is not delivered
+             within:
+                   • 12 hours of the passenger’s arrival for domestic flights,
+                   • 15 hours of the passenger’s arrival for international flights when the flight duration of the
+                       segment between the United States and a point in a foreign country is 12 hours or less, and
+
+1
+  https://www.federalregister.gov/documents/2024/04/26/2024-07177/refunds-and-other-consumer-protections;
+https://www.federalregister.gov/documents/2024/08/12/2024-17602/refunds-and-other-consumer-protections-2024-faa-
+reauthorization.
+                   •   30 hours of the passenger’s arrival for international flights when the flight duration of the
+                       segment between the United States and a point in a foreign country is more than 12 hours.
+         (4) Requires airlines to provide refunds of ancillary service fees if airlines fail to provide the ancillary
+             services that consumers paid for.
+         (5) Requires airlines and ticket agents to issue refunds in the original form of payment, unless consumers
+             agree to another form of payment, within seven business days for credit card payments and within 20
+             calendar days for other forms of payment.
+         (6) Requires airlines to issue transferable travel credits or vouchers valid for at least 5 years to consumers
+             in instances where consumers are restricted by a government or advised by a medical professional not
+             to travel to, from, or within the United States due to a serious communicable disease.
+
+     II.      To which entities do the Refund Rule’s requirements apply?
+
+
+2.     What entities must comply with the requirement to provide prompt refunds of airfare when airlines
+cancel or significantly change a flight?
+
+U.S. airlines, foreign airlines, and ticket agents that sell scheduled “air transportation” directly to consumers as
+the “merchants of record” are required to issue prompt refunds when airlines cancel or make a significant change
+to a flight and the consumer does not accept alternative transportation or other compensation offered. “Air
+transportation” is a term defined in the statute (49 U.S.C. § 40102). It includes domestic itineraries in the United
+States, as well as international itineraries to or from the United States.
+
+3.     What entities must comply with the requirement to promptly refund ancillary services fees when
+the services paid for by consumers were not provided (including refunding baggage fees for significantly
+delayed bags)?
+
+     •     U.S. and foreign airlines that are the merchant of record for the ancillary service fees must provide a
+           prompt and automatic refund of any ancillary service fees that is due.
+     •     If a ticket agent is the merchant of record for a checked bag fee and the checked bag service was not
+           provided (or was significantly delayed) through no fault of the consumer, the carrier that operated the
+           flight, or for multiple carrier itineraries, the carrier that operated the last segment of the consumer’s
+           itinerary is responsible for providing a prompt and automatic refund of the checked bag fee.
+     •     If a ticket agent is the merchant of record for fees for all other ancillary services, the carrier that operated
+           the flight and failed to provide the service through no fault of the consumer is responsible for providing a
+           prompt and automatic refund.
+
+4.    What entities must comply with the requirement of providing travel credits or vouchers to
+consumers who are affected by a serious communicable disease?
+
+U.S. and foreign air carriers that are the merchants of record for the airline tickets must comply with this
+requirement. If a ticket agent is the merchant of record, the operating carrier of the flight must comply with this
+requirement.
+
+5.         When must airlines and ticket agents comply with these requirements?
+
+
+
+                                                              2
+If a flight cancellation or significant delay (e.g., a delay of three hours or more for domestic flight and a delay of
+six hours or more for international flight) occurs on or after May 16, 2024, airlines are required to notify
+consumers of their rights to a refund and provide automatic refunds to eligible consumers, regardless of whether
+the ticket was purchased before May 16, 2024. (As required by Section 503 of the FAA Reauthorization Act of
+2024 (Act))
+
+For other refund-related requirements in the Department’s final rule that are not included in the Act, the
+compliance date is October 28, 2024. For instance, when a checked bag is significantly delayed as defined in 14
+CFR 260.2 or when an ancillary service paid by a consumer is not provided on or after October 28, 2024, carriers
+are required to provide a refund of the baggage fee or the ancillary service fee. Similarly, consistent with the
+revised 14 CFR 399.80(l), ticket agents that retain a non-refundable service fee for issuing the original ticket must
+disclose the fee’s existence, amount, and the non-refundable nature for any tickets sold on or after October 28,
+2024.
+
+Airlines will have approximately 12 months (on or around April 28, 2025) to comply with the requirements to
+issue travel credits or vouchers to passengers who are affected by a serious communicable disease.
+
+     III.      Providing Refunds of Airfare for Cancelled or Significantly Changed Flights
+
+6.          What are the new requirements regarding airline ticket refunds?
+
+This is the first time that the Department has required refunds be provided automatically by airlines when owed
+without consumers having to explicitly request them or jump through hoops. This is also the first time the
+Department is defining “significant change” and “cancellation” that entitle a consumer to a refund. These terms
+were not previously defined, which has resulted in inconsistency among carriers on when passengers are
+entitled to a refund.
+
+7.          What is the “automatic” refunds requirement?
+
+Airlines must provide a refund without consumers making a specific request when a consumer’s right to a
+refund is undisputed. This includes situations when an airline did not offer any alternative transportation or
+compensation following a flight cancellation, when a consumer rejects the alternative transportation or
+compensation offered in lieu of a refund, or when a consumer did not respond to the offer of alternative
+transportation or compensation and the consumer did not take the changed flight or the alternative flight
+offered.
+
+8.          Can airlines set a deadline for a consumer to respond to an offer of alternative transportation?
+
+Yes. Following a flight cancellation or a significant change, carriers may impose a deadline for consumers to
+respond to an offer of a changed or new flight so long as the carrier clearly and conspicuously notifies
+consumers that not responding to the offer by the deadline will result in the cancellation of the reservation, that
+consumers who reject the offer before the deadline are entitled to a refund within 7 or 20 days of the date of
+rejection, and that consumers who do not respond to the offer before the deadline are entitled to a refund within
+7 or 20 days of the date of the deadline. Airlines must provide prompt refunds if a consumer does not respond
+to the offer of changed or new flight and does not take the flight.
+
+9.          Can airlines offer consumers voucher, credit, or other compensation in lieu of a refund?
+
+                                                          3
+The rule requires refunds to be in cash or original form of payment by default. Airlines must first inform
+consumers of their right to a refund before offering a voucher, credit, or other compensation in lieu of a refund.
+
+10.     What notifications must airlines provide to affected consumers when flight cancellation or
+significant changes occur?
+
+Upon the occurrence of a flight cancellation or a significant change, airlines must timely notify affected
+consumers about the cancellation or significant change, consumers’ rights to a refund if this is the case, any
+offer of alternative transportation and other options such as travel credits, vouchers, or other compensation in
+lieu of a refund, and any material restrictions, limitations, or conditions on travel credits, vouchers, or other
+compensation, including the expiration date of a credit or voucher.
+
+11.    How soon should a consumer expect to receive a refund?
+
+The final rule requires that a refund must be issued “promptly” when it is due. It further specifies that a
+“prompt” refund is a refund issued within 7 business days for credit card payment, and within 20 calendar days
+for other forms of payment, such as debit card, cash, and check. “Business day” is defined as Monday through
+Friday excluding Federal holidays in the United States.
+
+12.     Which entity is responsible for issuing a refund of an airline ticket if the consumer booked the
+ticket through a ticket agent?
+
+The entity that is the “merchant of record” for the ticket sale is responsible for issuing a refund of an airline
+ticket when due. A “merchant of record” is the entity responsible for processing payments by consumers as
+shown in the consumer’s financial charge statements such as debit or credit card charge statements.
+
+13.   What responsibilities, if any, do airlines have when a refund of an airline ticket is due to a
+consumer by a ticket agent (i.e., ticket agent is the merchant of record)?
+
+When a ticket agent is responsible for issuing a refund because the ticket agent (1) is the merchant of record for
+the ticket sale and (2) received a refund request by a consumer, the airline that canceled or significantly changed
+the flight must inform the ticket agent without delay whether the consumer is eligible for a refund if contacted
+by the ticket agent. If the airline is in possession of a consumer’s funds, the airline must promptly transfer to the
+funds to the ticket agent. A ticket agent must provide refunds within 7 business days or 20 calendar days of
+receiving a confirmation from the airlines that a refund is due, even if the funds are not yet returned to the ticket
+agent.
+
+       IV.     Providing Refunds of Ancillary Service Fees for Services Not Provided and Refunds of Bag
+Fees for Significantly Delayed Bags
+
+14.    What is new about refunding ancillary service fees in this final rule?
+
+This final rule codifies the Department’s long-standing interpretation that it is an unfair and deceptive practice
+not to provide refunds of ancillary service fees whenever airlines fail to provide the services as promised.
+
+It also requires automatic refunds of ancillary service fees in situations where an ancillary service is not
+available to all passengers who paid for the service. For example, when Wi-Fi as an ancillary service is not
+available to all passengers that paid for Wi-Fi on a flight, the operating carrier, already having knowledge of the
+                                                          4
+service failure, should not wait for further notification or inquiry from the passengers. If an ancillary service is
+not available to an individual or several individuals rather than to all passengers who paid for the service,
+passenger notification about the service failure is needed before a refund is required because the airline may not
+have knowledge about the service failure.
+
+15.     Who is responsible for refunding an ancillary service fee that a consumer paid to a ticket agent?
+
+An airline that is the “merchant of record” for the ancillary service fee payment is the entity that is responsible
+for refunding the fee when the service is not provided.
+
+If a ticket agent is the merchant of record, the airline that operated the flight on which the service was not
+provided is responsible for the refund.
+
+16.     What does the rule require if passengers’ checked bags are delayed?
+
+Under this final rule, passengers who file a mishandled baggage report are entitled to an automatic refund of their
+checked bag fee if it is not delivered:
+   • Within 12 hours of the arrival of the passenger’s domestic flight;
+   • Within 15 hours of the arrival of the passenger’s international flight when the flight duration of the
+       segment between the United States and a point in a foreign country is 12 hours or less; and
+   • Within 30 hours of the arrival of the passenger’s international flight when the flight duration of the
+       segment between the United States and a point in a foreign country is more than 12 hours.
+
+17.     How is the length of bag delay calculated?
+
+The length of bag delay starts at the time the passenger is given the opportunity to deplane from a flight at the
+passenger’s final destination airport (the beginning of the delay) to the time that the carrier has delivered the bag
+to a location agreed upon by the passenger and carrier or the time that the bag has been picked up by the
+passenger or another person acting on behalf of the passenger at the passenger’s final destination airport (the
+end of the delay).
+
+18.     How does “automatic” refund work for refunding bag fees?
+
+To receive an automatic refund, a consumer must file a Mishandled Baggage Report (MBR) at any time after
+the checked bag does not arrive with the consumer. Once the MBR is filed, if the bag delay becomes significant
+(i.e., over 12 hours for domestic flight and over 15-30 hours for international flights), airlines must refund the
+baggage fee without further action by the consumer. If an airline responsible for the refund is not the same
+airline that accepted the MBR, the airline that accepted the MBR must timely notify the carrier responsible for
+providing a prompt refund that the bag has been lost or significantly delayed.
+
+19.   Who is responsible for refunding baggage fee for a significantly delayed bag if a consumer paid
+baggage fee to a ticket agent?
+
+An airline that is the “merchant of record” for the baggage fee payment is the entity that is responsible for
+refunding bag fee.
+
+If a ticket agent is the merchant of record, the airline that operated the flight (or the airline that operated the last
+flight segment if there are more than one airline operated the flight itinerary) is responsible for the refund.
+
+                                                           5
+20.    In what situations may airlines be exempted from refunding baggage fees even if the baggage
+delay is significant?
+
+In limited situations airlines are not required to refund baggage fees even if the baggage delay is more than 12
+hours for domestic flight or 15/30 hours for international flights. These situations are: (1) a passenger failed to
+pick up and recheck a bag at the first international entry point into the United States as required by U.S.
+Customs and Border Protection; (2) a passenger failed to pick up a checked bag that arrived on time at the
+passenger’s ticketed final destination due to the fault of the passenger if documented by the carrier; and (3) a
+passenger voluntarily agreed to travel without the checked bag on the same flight due to late check-in or
+traveling as a stand-by. In those situations, airlines are not exempted from other obligations relating to
+damaged, lost, or pilfered bags, or the right to incidental expenses reimbursement arising from delayed bags
+beyond the agreed upon delivery date.
+
+    V.     Providing Travel Credits or Vouchers to Consumers Whose Travel is Affected by a Serious
+Communicable Disease
+
+21.    Who is eligible to receive travel vouchers or credits due to a serious communicable disease under
+the rule?
+
+The rule requires airlines to issue travel vouchers or credits to consumers holding non-refundable tickets who
+are:
+
+      (1) advised by a licensed treating medical professional not to travel during a public health emergency to
+          protect himself/herself from a serious communicable disease, when the consumer purchased the
+          airline ticket before a public health emergency was declared, and the consumer is scheduled to travel
+          during the public health emergency to or from the area affected by the public health emergency;
+      (2) prohibited from travel or is required to quarantine for a substantial portion of the trip by a
+          governmental entity because of a serious communicable disease and the consumer purchased the
+          airline ticket before a public health emergency for that area was declared or, if there is no declaration of
+          a public health emergency, before the government prohibition or restriction for travel to or from that
+          area is imposed; or
+      (3) advised by a licensed treating medical professional not to travel, irrespective of a public health
+          emergency, because the consumer has or is likely to have contracted a serious communicable disease
+          and would pose a direct threat to the health of others.
+
+22.      What is a “serious communicable disease” under the rule?
+
+A serious communicable disease under this rule means a communicable disease that: (1) can cause serious
+health consequences (e.g., breathing problems, organ damage, neurological difficulties, death) and (2) can be
+easily transmitted by casual contact in an aircraft cabin environment (i.e., easily spread to others in an
+aircraft cabin through general activities of passengers such as sitting next to someone, shaking hands, talking to
+someone, or touching communal surfaces).
+
+For example, the common cold is readily transmissible in an aircraft cabin environment but does not have
+severe health consequences. AIDS has serious health consequences but is not readily transmissible in an
+aircraft cabin environment. Both the common cold and AIDS would not be considered serious communicable
+
+                                                           6
+diseases for purposes of this rule. SARS is readily transmissible in an aircraft cabin environment and has severe
+health consequences. SARS would be considered a serious communicable disease for purposes of this rule.
+
+23.    Which airline is responsible for issuing travel credits or vouchers to eligible consumers with
+affected travel when the consumers purchased their tickets from a ticket agent? How long do airlines
+have to issue the travel credits or vouchers?
+
+Airlines that are the merchants of records for eligible consumers’ tickets are responsible for issuing the travel
+credits or vouchers. If a ticket agent is the merchant of record, each operating carrier of the consumer’s
+itinerary is responsible.
+
+The rule does not specify an amount of time that airlines have to issue the travel credits or vouchers but the time
+period must be reasonable. The travel credits or vouchers provided must be valid for at least 5 years from the
+date of issuance.
+
+24.     May airlines require documentation as a condition to issue travel credits or vouchers when the
+flight of the consumer whose travel was affected is still operating?
+
+Airlines may require a consumer requesting a credit or voucher for a non-refundable ticket when the flight is
+still scheduled to be operated without significant change to provide, as appropriate:
+
+    (1) the applicable government order or other document relating to a serious communicable disease
+        demonstrating how the passenger is prohibited from travel or is required to quarantine at the destination
+        for a substantial portion of the trip; or
+    (2) a written statement from a licensed treating medical professional, attesting that it is the medical
+        professional’s opinion, based on current medical knowledge concerning a serious communicable
+        disease such as guidance issued by CDC or WHO and the passenger’s health condition, that the
+        passenger should not travel to protect the passenger from a serious communicable disease or the
+        passenger would pose a direct threat to the health of others if the passenger traveled. This medical
+        statement may only be required in the absence of HHS guidance declaring that requiring such
+        documentation is not in the public interest.
+
+
+
+
+                                                         7
+

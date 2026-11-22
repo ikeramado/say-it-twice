@@ -1,0 +1,35 @@
+# Dollars per million tokens, per model entry of config/models.yaml.
+# input: base input; cache_write: 5-minute cache write; cached_input: cache hit (read);
+# output: output; batch_*: the same through the Message Batches API (50% off input and
+# output; the page says the caching multipliers stack with the batch discount, so
+# batch_cached_input is half of cached_input). Rates for prompts of 100K tokens or fewer.
+placeholder:
+  input: 0.0
+  cache_write: 0.0
+  cached_input: 0.0
+  output: 0.0
+  batch_input: 0.0
+  batch_cached_input: 0.0
+  batch_output: 0.0
+  source: none (fixed answer, no model)
+  read_on: "2026-11-18"
+claude-haiku-5-5:
+  input: 0.10
+  cache_write: 0.125
+  cached_input: 0.01
+  output: 0.50
+  batch_input: 0.05
+  batch_cached_input: 0.005
+  batch_output: 0.25
+  source: https://platform.claude.com/docs/en/about-claude/pricing.md (cited by the claude-api skill, shared/live-sources.md, Pricing row)
+  read_on: "2026-11-18"
+claude-sonnet-5-5:
+  input: 2.00
+  cache_write: 2.50
+  cached_input: 0.10
+  output: 10.00
+  batch_input: 1.00
+  batch_cached_input: 0.05
+  batch_output: 5.00
+  source: https://platform.claude.com/docs/en/about-claude/pricing.md (cited by the claude-api skill, shared/live-sources.md, Pricing row)
+  read_on: "2026-11-18"

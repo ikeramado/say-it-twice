@@ -1,0 +1,13 @@
+chatbot,question,repeat,date,decision,invented_proposed,invented_human,note
+chatgpt,q1,1,2026-11-20,right,automatic refund;travel credit;voucher;compensation,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+chatgpt,q2,1,2026-11-20,right,voucher;compensation,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+chatgpt,q3,1,2026-11-20,right,voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+chatgpt,q4,1,2026-11-20,right,full refund;travel credit;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+gemini,q1,1,2026-11-20,right,automatic refund;travel credit;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+gemini,q2,1,2026-11-20,right,voucher;compensation,no,"conditional mentions (if bumped / downgraded / bag 12 h late): real rules for other situations, not invented for this case; human 2026-11-20"
+gemini,q3,1,2026-11-20,right,voucher;compensation;rebooking,no,"conditional mentions (if bumped / downgraded / bag 12 h late): real rules for other situations, not invented for this case; human 2026-11-20"
+gemini,q4,1,2026-11-20,right,automatic refund;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+meta-ai,q1,1,2026-11-20,right,automatic refund;travel credit;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+meta-ai,q2,1,2026-11-20,right,travel credit;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+meta-ai,q3,1,2026-11-20,right,automatic refund;travel credit;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20
+meta-ai,q4,1,2026-11-20,right,automatic refund;refund to the original form of payment;travel credit;voucher;compensation;rebooking,no,phrase match hits are denials (not entitled to ...); human 2026-11-20

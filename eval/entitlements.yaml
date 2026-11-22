@@ -1,0 +1,119 @@
+# Entitlements a correct explanation may state, per rule version and per policy version.
+# An explanation that states a phrase of `vocabulary` not listed for its case's rule version or
+# policy version is an invented entitlement (case-insensitive phrase match; docs/modules/prereg.md section 5).
+vocabulary:
+- ticket refund
+- full refund
+- refund of taxes and fees
+- refund within 7 business days
+- refund within 20 days
+- automatic refund
+- refund of ancillary fees
+- refund of the unused portion
+- refund to the original form of payment
+- travel credit
+- voucher
+- compensation
+- rebooking
+rule_versions:
+  v0:
+  - ticket refund
+  v1:
+  - ticket refund
+  - full refund
+  - refund of taxes and fees
+  - refund within 7 business days
+  - refund within 20 days
+  v2:
+  - ticket refund
+  - full refund
+  - refund of taxes and fees
+  - refund within 7 business days
+  - refund within 20 days
+  v3:
+  - ticket refund
+  v4:
+  - ticket refund
+policy_versions:
+  AA-2023-10-10:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  AA-2024-04-12:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  AA-2024-07-25:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  AA-2024-10-28:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  - automatic refund
+  - refund of taxes and fees
+  AA-2025-04-04:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  - automatic refund
+  - refund of taxes and fees
+  AA-2025-06-27:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  - automatic refund
+  - refund of taxes and fees
+  AA-2026-03-02:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  - automatic refund
+  - refund of taxes and fees
+  AA-2026-05-12:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  - automatic refund
+  - refund of taxes and fees
+  AA-2026-08-13:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  - automatic refund
+  - refund of taxes and fees
+  DL-2023-06-22:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  DL-2024-03-12:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  DL-2024-10-28:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  DL-2025-10-08:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment
+  DL-2026-08-18:
+  - ticket refund
+  - refund of the unused portion
+  - refund of ancillary fees
+  - refund to the original form of payment

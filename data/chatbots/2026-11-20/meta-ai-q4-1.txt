@@ -1,0 +1,53 @@
+On these facts, **US law gives you no automatic cash compensation for the 232-minute delay.**
+
+That is the core difference from Europe: there is no US equivalent of EU261 for a domestic flight.
+
+### 1. No fixed delay payment
+
+> "Federal law in the United States sets no cash compensation payment for a delayed flight."
+
+> "Airlines operating domestic routes in the United States are not required to pay passengers anything for a delayed flight, no matter how long the delay lasts."
+
+The proposed DOT rule that would have created fixed cash compensation was withdrawn, and that remains the position: "a proposed rule was withdrawn in November 2025".
+
+Your flight being 3 hours 52 minutes late does **not** by itself create a $ / € amount owed.
+
+Delta also does not voluntarily commit to that on the DOT dashboard:
+
+> " Delta Air Lines does not commit to - Cash compensation when a delay results in passenger waiting for 3 hours or more from the scheduled departure time"
+
+### 2. The 3-hour rule is about a refund, not compensation
+
+US law _does_ treat a domestic delay of 3+ hours as a "significant change":
+
+> "You are owed a **refund** when the airline cancels or significantly changes your flight (domestic: departure or arrival 3+ hours off schedule; international: 6+ hours) and you decline the alternative."
+
+Your 232 minutes clears that 3-hour threshold. But the refund right only helps if you **did not travel / declined the alternative**.
+
+Since you say you arrived in Atlanta, albeit late, you used the transportation. You are not entitled to a refund of the fare for DL308 on that basis.
+
+If you had decided not to travel because of the delay, Delta would have owed an automatic refund to the original form of payment, not a voucher, under the DOT refund rule in 14 CFR Part 260.
+
+### 3. What _could_ have applied at the time
+
+What you might have been entitled to on the day depended on **why** the flight was late:
+
+- **Controllable cause** - e.g. crew, maintenance, cleaning, baggage, fueling: "When the airline caused the delay (crew, maintenance, cleaning, baggage, fueling), its own commitments on the DOT dashboard apply: often meals, hotels and rebooking."
+- **Uncontrollable cause** - e.g. weather, air traffic control: those meal/hotel commitments generally do not apply.
+
+Those are care-type commitments - rebooking, meal voucher, hotel for an overnight delay - not retroactive cash for lost time. If Delta did not provide a meal voucher or hotel you were promised at the time, keep receipts and raise that specifically, rather than claiming "delay compensation."
+
+### 4. What is _not_ applicable here
+
+- **EU261 / UK261:** Does not apply to a purely domestic US flight, CVG to ATL.
+- **Denied-boarding compensation:** The 200% / 400% of fare rules apply to involuntary bumping from an oversold flight, not to a flight that operated late. You were not denied boarding.
+- **Tarmac-delay rule:** That limits how long a domestic flight can stay on the tarmac - 3 hours - but does not create a cash payment for arriving late.
+
+### Practical next steps
+
+1. **Ask Delta for goodwill, not legal compensation.** Airlines sometimes give miles or a travel credit for a long controllable delay, even though they are not legally required to. Frame it as a goodwill request and cite the delay length and cause, if you know it.
+2. **Check other coverage.** Travel insurance or a credit-card trip-delay benefit may reimburse meals, hotel, or missed connections, even where US law does not.
+3. **Keep proof.** Boarding pass, booking confirmation from 25 January 2026, scheduled vs. actual arrival times for DL308 on 24 February 2026, and any Delta messages about the reason for the delay.
+4. **If Delta promised care and did not deliver it,** file a complaint with Delta first, then with the DOT if unresolved.
+
+**Bottom line:** 232 minutes is long enough to count as a significant change for refund purposes, but because you completed the trip, US law entitles you to **no cash compensation and no fare refund** for DL308.
